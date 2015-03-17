@@ -1,3 +1,45 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+header {
+  background-color: #d1e5e1;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 2.0em;
+  margin: auto;
+  max-width: 85%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.project {
+  display: inline;
+  margin: auto;
+  max-height: 40%;
+  max-width: 40%;
+}
+
+.project p,img{
+  display: inline;
+  margin: auto;
+}
+
+.social-media-icon {
+  display: inline;
+  margin: auto;
+  max-height: 20%;
+  max-width: 20%;
+}
+
+.social-media-icon p,img {
+  display: inline;
+  margin: auto;
+}
+
+.hawaii-pic {
+  max-height: 100px;
+  max-width: 100px;
+}
