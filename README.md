@@ -1,5 +1,7 @@
 # Rails Blog
-Status: Barely even begun. CRUD functionality for writing articles, can add/delete comments, basic admin authentication.
+Status: Just getting started. 
+
+Currently has CRUD functionality for writing articles, can add/delete comments, basic admin authentication.
 
 ## What is it?
 I decided to remake the HTML/CSS only website I made during Phase Zero of Dev Bootcamp using Ruby on Rails.
