@@ -1,5 +1,5 @@
 class Article < ActiveRecord::Base
-  has_many :comments
+  has_many :comments, dependent: :destroy
 
   validates_presence_of :title
   validates :title, length: { minimum: 5 }
