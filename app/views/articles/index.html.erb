@@ -1,4 +1,6 @@
 <h1>My Articles</h1>
+<%= link_to 'Make a new article', new_article_path %>
+
 <div class="article-list">
   <% unless @articles.nil? %>
   <% @articles.each do |article| %>
