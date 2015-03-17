@@ -1,4 +1,7 @@
 class CommentsController < ApplicationController
+  http_basic_authenticate_with name: ENV['ADMIN_NAME'], password: ENV['ADMIN_PASSWORD'], only: :destroy
+  # Allows read only access for non-admin users so they can't edit/delete things
+
   def create
     @article = Article.find(params[:article_id])
     @comment = @article.comments.create(comment_params)
