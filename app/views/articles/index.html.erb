@@ -1,0 +1,15 @@
+<h1>My Articles</h1>
+<div class="article-list">
+  <% unless @articles.nil? %>
+  <% @articles.each do |article| %>
+  <div class="article">
+    <p class="article-title">
+      <%= article.title %>
+    </p>
+    <p class="article-text">
+      <%= article.text %>
+    </p>
+  </div>
+  <% end %>
+  <% end %>
+</div>
