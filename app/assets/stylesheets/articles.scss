@@ -29,6 +29,9 @@ ul.article-links li {
   background-color: #efefef;
   border-bottom: 1px solid #dbdbdb;
   font-family: 'Roboto', Helvetica, sans-serif;
+  margin: auto;
+  max-width: 85%;
+  padding: 3%;
 }
 
 .article-title {
@@ -37,4 +40,23 @@ ul.article-links li {
 
 .article-text {
   font-size: 1.1em;
+}
+
+.comment-list {
+  margin: auto;
+  max-width: 85%;
+  padding: 3%;
+}
+
+.commenter {
+  font-size: 1.2em;
+  font-stretch: thick;
+}
+
+.comment-body {
+  font-stretch: thin;
+}
+
+.comment-links {
+
 }
