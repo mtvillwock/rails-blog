@@ -2,10 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
 header {
-  background-color: #d1e5e1;
+  background-color: #efefef;
+  /* background-image: url("the-cliffs-of-moher.jpg"); */
+  /*redo this with jumbotron?*/
+  background-repeat: no-repeat;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 2.0em;
+  height: 20%;
   margin: auto;
   max-width: 85%;
   text-align: center;
@@ -15,31 +23,47 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: red;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.project-list {
+  background-color: #efefef;
+  margin: auto;
+  max-width: 70%;
+  text-align: center;
+}
+
 .project {
   display: inline;
   margin: auto;
-  max-height: 40%;
-  max-width: 40%;
 }
 
-.project p,img{
+.project img{
   display: inline;
   margin: auto;
+  max-height: 300px;
+  max-width: 300px;
 }
 
 .social-media-icon {
   display: inline;
   margin: auto;
-  max-height: 20%;
-  max-width: 20%;
 }
 
-.social-media-icon p,img {
+.social-media-icon img {
   display: inline;
   margin: auto;
-}
-
-.hawaii-pic {
   max-height: 100px;
   max-width: 100px;
+}
+
+.hawaii-pic img {
+  display: inline;
+  max-height: 200px;
+  max-width: 200px;
 }

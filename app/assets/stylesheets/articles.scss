@@ -20,6 +20,8 @@ ul.article-links li {
 
 .container {
   background-color: #d1e5e1;
+  margin: auto;
+  max-width: 85%;
 }
 
 .article-list {
@@ -27,8 +29,10 @@ ul.article-links li {
   max-width: 85%;
 }
 
-.article p {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif
+.article {
+  background-color: #efefef;
+  border-bottom: 1px solid #dbdbdb;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .article-title {
