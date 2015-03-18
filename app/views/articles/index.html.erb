@@ -9,6 +9,8 @@
     <%= link_to 'Make a new article', new_article_path %>
   </header>
 
+  <div class="hr"></div>
+
   <div class="article-list">
     <% unless @articles.nil? %>
     <% @articles.each do |article| %>

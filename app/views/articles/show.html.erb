@@ -23,7 +23,6 @@
     </p>
   </div>
 
-  <div class="hr"></div>
 
   <div class="comment-list">
     <h2>Comments</h2>
@@ -36,13 +35,14 @@
   <%= render 'comments/form' %>
 
   <div class="article-nav-links">
-    <li><%= link_to 'Edit', edit_article_path(@article) %>
+    <li class="edit-article"><%= link_to 'Edit', edit_article_path(@article) %>
     </li>
-    <li>
+    <li class="view-articles">
     <%= link_to 'Back to articles', articles_path %>
   </li>
   </div>
 
+  <div class="hr"></div>
   <%= render 'welcome/nav' %>
   <div class="hr"></div>
 </div>
