@@ -1,6 +1,16 @@
 <div class="container">
   <%= render 'welcome/nav' %>
 
+  <header class="header">
+    <%= link_to '/' do %>
+    <h1>Never Finished</h1>
+    <% end %>
+    <h2>Matt Villwock | Software Developer</h2>
+  </header>
+
+  <div class="hr" id="summary"></div>
+
+
   <div class="article">
     <p class="article-title">
       <strong>Title:</strong>
@@ -25,9 +35,13 @@
   <h2>Add a comment:</h2>
   <%= render 'comments/form' %>
 
-  <%= link_to 'Edit', edit_article_path(@article) %>
-  <br><br>
-  <%= link_to 'Back to articles', articles_path %>
+  <div class="article-nav-links">
+    <li><%= link_to 'Edit', edit_article_path(@article) %>
+    </li>
+    <li>
+    <%= link_to 'Back to articles', articles_path %>
+  </li>
+  </div>
 
   <%= render 'welcome/nav' %>
   <div class="hr"></div>

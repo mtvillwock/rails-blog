@@ -2,9 +2,11 @@
   <%= render 'welcome/nav' %>
 
   <header>
-  <h1>Never Finished</h1>
-  <h2>Articles by Matt Villwock</h2>
-  <%= link_to 'Make a new article', new_article_path %>
+    <%= link_to '/' do %>
+    <h1>Never Finished</h1>
+    <% end %>
+    <h2>Matt Villwock | Software Developer</h2>
+    <%= link_to 'Make a new article', new_article_path %>
   </header>
 
   <div class="article-list">
@@ -21,8 +23,8 @@
         <li class="show-article"><%= link_to 'Read More', article_path(article) %></li>
         <li class="edit-article"><%= link_to 'Edit', edit_article_path(article) %></li>
         <li class="delete-article"><%= link_to 'Delete', article_path(article),
-                                    method: :delete,
-                                    data: { confirm: 'Are you sure?'} %></li>
+        method: :delete,
+        data: { confirm: 'Are you sure?'} %></li>
       </ul>
     </div>
     <% end %>

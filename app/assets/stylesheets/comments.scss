@@ -17,6 +17,24 @@
   font-stretch: thin;
 }
 
-.comment-links {
+.comment-links a {
+  color: #00b0ff;
+}
 
+.comment-form {
+  margin: auto;
+}
+
+.comment-form-commenter {
+
+}
+
+.comment-form-body {
+
+}
+
+.comment-form-submit input{
+  background-color: #0d355a;
+  border-radius: 15px;
+  color: #e7e7e7;
 }
