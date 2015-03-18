@@ -1,63 +1,72 @@
-<header class="header">
-    <h1><a href="/">Mtvillwock.github.io</a></h1>
-    <p>Never Finished</p>
-    <div class="hawaii-pic">
-      <%= image_tag("villwock-hawaii-no-shades.jpg", :alt => "Villwock in Hawaii") %>
-    </div>
-    <%= link_to 'My Blog', controller: 'articles' %>
+<div class="container">
+  <%= render 'nav' %>
+
+  <header class="header">
+    <h1><a href="/">Matt Villwock | Software Developer</a></h1>
+    <h2>Never Finished</h2>
   </header>
 
+  <div class="hr" id="summary"></div>
 
-
-<div class="container">
   <div class="summary">
-    <p>Hi, my name is Matt. I'm a web developer, and a recent graduate of Dev Bootcamp.</p>
-    <p>This is my personal website and <a href="/articles">blog</a>, built using Ruby on Rails. Listed below is my portfolio, along with links to contact me.</p>
-
+    <h3>About Me</h3>
+    <p>Hi, my name is Matt. I'm a web developer, and a recent graduate of Dev Bootcamp. I came to web development after getting a taste of it in digital marketing and getting hooked on building things.</p>
+    <p>This is my personal website and blog, built using Ruby on Rails. Listed below are my projects, along with links to contact me.</p>
     <p>I love building things, working in teams, and solving problems.</p>
   </div>
 
+  <div class="hr" id="project-list"></div>
+
   <div class="project-list">
     <div class="project">
-      <%= link_to 'https://github.com/jeremymcintyre/hummingbird' do %>
-      <%= image_tag('hummingbird-small.png', :alt => "hummingbird") %>
-      <% end %>
-      <p>Hummingbird was my final project at Dev Bootcamp. The app allows users to schedule text messages to be delivered at a more optimal time. Our team built the app in seven days, using a Ruby on Rails API for the back-end and an Ionic/Angular front-end.</p>
+      <div class="hummingbird-image">
+        <%= link_to 'https://github.com/jeremymcintyre/hummingbird' do %>
+        <%= image_tag('hummingbird-small.png', :alt => "hummingbird") %>
+        <% end %>
+      </div>
+      <div class="project-description">
+        <h3>Hummingbird</h3>
+        <p>Hummingbird was my final project at Dev Bootcamp. </p>
+        <p>The app allows users to schedule text messages to be delivered at a more optimal time. </p>
+        <p>Our team built the app in seven days, using a Ruby on Rails API for the back-end and an Ionic/Angular front-end.</p>
+      </div>
     </div>
+
+    <div class="hr"></div>
+
     <div class="project">
-      <%= link_to 'https:/github.com/mtvillwock/maps-with-friends' do %>
-      <%= image_tag('maps-with-friends.jpg') %>
-      <% end %>
-      <p>Maps With Friends is a side project I am working on during my job search after graduating from Dev Bootcamp. A conversation with a friend from high school gave me the idea to build something that would allow me to visualize the diverse locations where my friends had scattered across the country. Technologies used include Sinatra, JavaScript, and the Google Maps API.</p>
+      <div class="maps-image">
+        <%= link_to 'https:/github.com/mtvillwock/maps-with-friends' do %>
+        <%= image_tag('maps-with-friends.jpg') %>
+        <% end %>
+      </div>
+      <div class="project-description">
+        <h3>Maps with Friends</h3>
+        <p>Maps With Friends is a side project I am working on during my job search after graduating from Dev Bootcamp. </p>
+        <p>A conversation with a friend from high school gave me the idea to build something that would allow me to visualize the diverse locations where my friends had scattered across the country. </p>
+        <p>Technologies used include Sinatra, JavaScript, and the Google Maps API.</p>
+      </div>
     </div>
+
+    <div class="hr"></div>
+
     <div class="project">
-      <img src="#">
-      <p>To Be Announced</p>
+      <div class="project-image">
+        <%= link_to '#' do %>
+        <%= image_tag("geocode.jpg") %>
+        <% end %>
+      </div>
+      <div class="project-description">
+        <h3>Project To Be</h3>
+        <p>What can I help you build?</p>
+      </div>
     </div>
   </div>
 
-  <div class="contact-icons">
-    <div class="social-media-icon">
-      <%= link_to "mailto:" + ENV["ADMIN_EMAIL"] do %>
-      <%= image_tag("Communication-email-icon.png", :alt => "email icon") %>
-      <% end %>
-    </div>
-    <div class="social-media-icon">
-      <%= link_to 'https://twitter.com/mtvillwock' do %>
-      <%= image_tag('Twitter_logo_blue.png', :alt => "Twitter") %>
-      <% end %>
-    </div>
-    <div class="social-media-icon">
-      <%= link_to 'https://linkedin.com/in/matthewvillwock' do %>
-      <%= image_tag('linkedin-icon-logo-vector.png', :alt => "LinkedIn") %>
-      <% end %>
-    </div>
-    <div class="social-media-icon">
-      <%= link_to 'https://github.com/mtvillwock' do %>
-      <%= image_tag('GitHub-Mark-120px-plus.png', :alt => "GitHub") %>
-      <% end %>
-    </div>
-  </div>
+  <div class="hr"></div>
 
+  <%= render 'nav' %>
+
+  <div class="hr"></div>
 </div>
 
