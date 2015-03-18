@@ -2,52 +2,53 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
-  background-color: #f7f7f7;
-  text-align: center;
+.container {
+  background-color: #efefef;
 }
 
 header {
-  background-color: #efefef;
-  /* background-image: url("the-cliffs-of-moher.jpg"); */
-  /*redo this with jumbotron?*/
-  background-repeat: no-repeat;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  height: 20%;
+  clear: both;
   margin: auto;
   max-width: 85%;
-  text-align: center;
+  padding: 1%;
+  text-transform: uppercase;
 }
 
-a {
-  text-decoration: none;
+h1,h2,h3 {
+  color: #0d355a;
+  font-family: 'Roboto', Helvetica, sans-serif;
 }
 
-a:hover {
-  color: red;
+h1 {
+  font-size: 2em;
+  font-stretch: thick;
 }
 
-a:visited {
-  color: inherit;
+h2 {
+  font-size: 1.5em;
+  font-stretch: thin;
 }
 
-.project-list {
-  background-color: #efefef;
-  margin: auto;
-  max-width: 70%;
-  text-align: center;
+h3 {
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
-.project {
-  display: inline;
-  margin: auto;
+.home-nav {
+  padding: 1%;
 }
 
-.project img{
-  display: inline;
-  margin: auto;
-  max-height: 300px;
-  max-width: 300px;
+.nav-items a {
+  float: left;
+  margin: auto 10px;
+  color: #5a5a5a;
+  font-size: 1.05em;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.contact-icons {
+  float: right;
 }
 
 .social-media-icon {
@@ -57,13 +58,64 @@ a:visited {
 
 .social-media-icon img {
   display: inline;
-  margin: auto;
-  max-height: 100px;
-  max-width: 100px;
+  margin: auto 10px;
+  max-height: 36px;
+  max-width: 36px;
 }
 
-.hawaii-pic img {
-  display: inline;
-  max-height: 200px;
-  max-width: 200px;
+.summary {
+  clear: both;
+  padding: 3%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.hr {
+  border: 1px #e7e7e7 solid;
+  clear: both;
+  margin: 1%;
+}
+
+.project-list {
+  background-color: #efefef;
+  margin: auto;
+}
+
+.project {
+  padding: 3%;
+}
+
+.project-description {
+  float: left;
+  margin: auto;
+  padding: 10px;
+  max-width: 40%;
+}
+
+.hummingbird-image img {
+  float: right;
+  margin: auto;
+  max-height: 300px;
+  max-width: 30%;
+}
+
+.maps-image img {
+  float: right;
+  margin: auto;
+  max-height: 300px;
+  max-width: 50%;
+}
+
+/* rename this when project is added*/
+.project-image img {
+  float: right;
+  margin: auto;
+  max-height: 300px;
+  max-width: 50%;
 }
