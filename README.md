@@ -1,10 +1,9 @@
 # Rails Blog
-Status: Just getting started. 
+Status: In progress. 
 
-Currently has CRUD functionality for writing articles, can add/delete comments, basic admin authentication.
-Some images and content added to home page.
+Currently has CRUD functionality for writing articles, can add/delete comments, basic HTTP authentication for admin-only actions. Second batch of CSS revisions implemented.
 
 ## What is it?
-I decided to remake the HTML/CSS only website I made during Phase Zero of Dev Bootcamp using Ruby on Rails.
+I decided to remake the HTML/CSS only website I made during Phase Zero of Dev Bootcamp using Ruby on Rails as a basis for a blogging platform.
 
 This is a work in progress.
