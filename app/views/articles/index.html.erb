@@ -1,6 +1,11 @@
 <div class="container">
-  <h1>My Articles</h1>
+  <%= render 'welcome/nav' %>
+
+  <header>
+  <h1>Never Finished</h1>
+  <h2>Articles by Matt Villwock</h2>
   <%= link_to 'Make a new article', new_article_path %>
+  </header>
 
   <div class="article-list">
     <% unless @articles.nil? %>
@@ -23,4 +28,7 @@
     <% end %>
     <% end %>
   </div>
+
+  <%= render 'welcome/nav' %>
+  <div class="hr"></div>
 </div>

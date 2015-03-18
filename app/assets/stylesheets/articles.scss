@@ -15,13 +15,8 @@ li {
 }
 
 ul.article-links li {
+  color: #00b0ff;
   display: inline;
-}
-
-.container {
-  background-color: #d1e5e1;
-  margin: auto;
-  max-width: 85%;
 }
 
 .article-list {
@@ -32,7 +27,7 @@ ul.article-links li {
 .article {
   background-color: #efefef;
   border-bottom: 1px solid #dbdbdb;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Roboto', Helvetica, sans-serif;
 }
 
 .article-title {
