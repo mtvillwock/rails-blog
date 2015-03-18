@@ -1,10 +1,13 @@
-<h1>Mtvillwock.github.io</h1>
-<p>The personal website of Matt Villwock.</p>
-<div class="hawaii-pic">
-  <%= image_tag("villwock-hawaii-no-shades.jpg", :alt => "Villwock in Hawaii") %>
-  <!-- <img src="/images/villwock-hawaii-no-shades.jpg" alt="Villwock in Hawaii"> -->
-</div>
-<%= link_to 'My Blog', controller: 'articles' %>
+<header class="header">
+    <h1><a href="/">Mtvillwock.github.io</a></h1>
+    <p>Never Finished</p>
+    <div class="hawaii-pic">
+      <%= image_tag("villwock-hawaii-no-shades.jpg", :alt => "Villwock in Hawaii") %>
+    </div>
+    <%= link_to 'My Blog', controller: 'articles' %>
+  </header>
+
+
 
 <div class="container">
   <div class="summary">
@@ -16,12 +19,16 @@
 
   <div class="project-list">
     <div class="project">
-      <img src="#">
-      <p>Hummingbird</p>
+      <%= link_to 'https://github.com/jeremymcintyre/hummingbird' do %>
+      <%= image_tag('hummingbird-small.png', :alt => "hummingbird") %>
+      <% end %>
+      <p>Hummingbird was my final project at Dev Bootcamp. The app allows users to schedule text messages to be delivered at a more optimal time. Our team built the app in seven days, using a Ruby on Rails API for the back-end and an Ionic/Angular front-end.</p>
     </div>
     <div class="project">
-      <img src="#">
-      <p>Maps With Friends</p>
+      <%= link_to 'https:/github.com/mtvillwock/maps-with-friends' do %>
+      <%= image_tag('maps-with-friends.jpg') %>
+      <% end %>
+      <p>Maps With Friends is a side project I am working on during my job search after graduating from Dev Bootcamp. A conversation with a friend from high school gave me the idea to build something that would allow me to visualize the diverse locations where my friends had scattered across the country. Technologies used include Sinatra, JavaScript, and the Google Maps API.</p>
     </div>
     <div class="project">
       <img src="#">
@@ -29,22 +36,26 @@
     </div>
   </div>
 
-  <div>
+  <div class="contact-icons">
     <div class="social-media-icon">
-      <img src="#">
-      <p>Gmail</p>
+      <%= link_to ENV["ADMIN_EMAIL"] do %>
+      <%= image_tag("Communication-email-icon.png", :alt => "email icon") %>
+      <% end %>
     </div>
     <div class="social-media-icon">
-      <img src="#">
-      <p>Twitter</p>
+      <%= link_to 'https://twitter.com/mtvillwock' do %>
+      <%= image_tag('Twitter_logo_blue.png', :alt => "Twitter") %>
+      <% end %>
     </div>
     <div class="social-media-icon">
-      <img src="#">
-      <p>LinkedIn</p>
+      <%= link_to 'https://linkedin.com/in/matthewvillwock' do %>
+      <%= image_tag('linkedin-icon-logo-vector.png', :alt => "LinkedIn") %>
+      <% end %>
     </div>
     <div class="social-media-icon">
-      <img src="#">
-      <p>GitHub</p>
+      <%= link_to 'https://github.com/mtvillwock' do %>
+      <%= image_tag('GitHub-Mark-120px-plus.png', :alt => "GitHub") %>
+      <% end %>
     </div>
   </div>
 
