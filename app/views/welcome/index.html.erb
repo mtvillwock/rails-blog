@@ -38,7 +38,7 @@
 
   <div class="contact-icons">
     <div class="social-media-icon">
-      <%= link_to ENV["ADMIN_EMAIL"] do %>
+      <%= link_to "mailto:" + ENV["ADMIN_EMAIL"] do %>
       <%= image_tag("Communication-email-icon.png", :alt => "email icon") %>
       <% end %>
     </div>
