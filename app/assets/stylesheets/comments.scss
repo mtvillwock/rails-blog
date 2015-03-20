@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+}
+
 .comment-list {
   margin: auto;
   max-width: 85%;
@@ -22,6 +26,7 @@
 }
 
 .comment-form {
+
   margin: auto;
 }
 
@@ -35,6 +40,6 @@
 
 .comment-form-submit input{
   background-color: #0d355a;
-  border-radius: 15px;
+  border-radius: 5px;
   color: #e7e7e7;
 }

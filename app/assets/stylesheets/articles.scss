@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+}
+
 .field_with_errors {
   background-color: #d1e5e1;
 }
@@ -28,7 +32,6 @@ ul.article-links li {
 .article {
   background-color: #efefef;
   border-bottom: 1px solid #dbdbdb;
-  font-family: 'Roboto', Helvetica, sans-serif;
   margin: auto;
   max-width: 85%;
   padding: 3%;
@@ -46,4 +49,28 @@ ul.article-links li {
   color: #00b0ff;
   margin: 1%;
   padding: 1%;
+}
+
+article-form {
+  background-color: #efefef;
+  margin: auto;
+  padding: 1%;
+  width: 50%;
+}
+
+#article_title {
+  background-color: #eee;
+  width: 50%;
+}
+
+#article_text {
+  background-color: #eee;
+  height: 200px;
+  width: 70%;
+}
+
+.article-form-submit input {
+  background-color: #0d355a;
+  border-radius: 5px;
+  color: #00b0ff;
 }
