@@ -1,6 +1,15 @@
 <div class="container">
-  <h1>My Articles</h1>
-  <%= link_to 'Make a new article', new_article_path %>
+  <%= render 'welcome/nav' %>
+
+  <header>
+    <%= link_to '/' do %>
+    <h1>Never Finished</h1>
+    <% end %>
+    <h2>Matt Villwock | Software Developer</h2>
+    <span class="new-article"><%= link_to 'Make a new article', new_article_path %></span>
+  </header>
+
+  <div class="hr"></div>
 
   <div class="article-list">
     <% unless @articles.nil? %>
@@ -10,17 +19,20 @@
         <%= article.title %>
       </p>
       <p class="article-text">
-        <%= article.text %>
+        <%= article.summary %>
       </p>
       <ul class="article-links">
-        <li class="show-article"><%= link_to 'Show', article_path(article) %></li>
+        <li class="show-article"><%= link_to 'Read More', article_path(article) %></li>
         <li class="edit-article"><%= link_to 'Edit', edit_article_path(article) %></li>
         <li class="delete-article"><%= link_to 'Delete', article_path(article),
-                                    method: :delete,
-                                    data: { confirm: 'Are you sure?'} %></li>
+        method: :delete,
+        data: { confirm: 'Are you sure?'} %></li>
       </ul>
     </div>
     <% end %>
     <% end %>
   </div>
+
+  <%= render 'welcome/nav' %>
+  <div class="hr"></div>
 </div>

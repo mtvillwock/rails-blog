@@ -1,5 +1,17 @@
-<h1>Editing article</h1>
+<%= render 'welcome/nav' %>
+
+<header class="header">
+  <%= link_to '/' do %>
+  <h1>Never Finished</h1>
+  <% end %>
+  <h2>Matt Villwock | Software Developer</h2>
+</header>
+
+<div class="hr" id="summary"></div>
 
 <%= render 'form' %>
 
 <%= link_to 'Back to articles', articles_path %>
+
+<div class="hr" id="summary"></div>
+<%= render 'welcome/nav' %>

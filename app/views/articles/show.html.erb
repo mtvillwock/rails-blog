@@ -1,21 +1,49 @@
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+<div class="container">
+  <%= render 'welcome/nav' %>
 
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
+  <header class="header">
+    <%= link_to '/' do %>
+    <h1>Never Finished</h1>
+    <% end %>
+    <h2>Matt Villwock | Software Developer</h2>
 
-<h2>Comments</h2>
-<% @article.comments.each do |comment| %>
-<%= render comment %>
-<% end %>
+    <div class="article-nav-links">
+      <li class="edit-article"><%= link_to 'Edit article', edit_article_path(@article) %>
+      </li>
+      <li class="view-articles">
+        <%= link_to 'Back to articles', articles_path %>
+      </li>
+    </div>
+  </header>
 
-<h2>Add a comment:</h2>
-<%= render 'comments/form' %>
+  <div class="hr" id="summary"></div>
 
-<%= link_to 'Edit', edit_article_path(@article) %>
-<br><br>
-<%= link_to 'Back to articles', articles_path %>
+  <div class="main-content">
+    <div class="article">
+      <p class="article-title">
+        <strong>Title:</strong>
+        <%= @article.title %>
+      </p>
+
+      <p class="article-text">
+        <strong>Text:</strong>
+        <%= @article.text %>
+      </p>
+    </div>
+
+
+    <div class="comment-list">
+      <h2>Comments</h2>
+      <% @article.comments.each do |comment| %>
+      <%= render comment %>
+      <% end %>
+    </div>
+
+    <h2>Add a comment:</h2>
+    <%= render 'comments/form' %>
+  </div>
+
+  <div class="hr"></div>
+  <%= render 'welcome/nav' %>
+  <div class="hr"></div>
+</div>

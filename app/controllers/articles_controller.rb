@@ -1,3 +1,6 @@
+require 'nokogiri'
+require 'open-uri'
+
 class ArticlesController < ApplicationController
   http_basic_authenticate_with name: ENV["ADMIN_NAME"], password: ENV["ADMIN_PASSWORD"], except: [:index, :show]
   # Allows read only access for non-admin users so they can't edit/delete things
@@ -22,6 +25,9 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
     # @article = Article.new(params.require(:article).permit(:title, :text)
     if @article.save
+      text = @article.text
+      summary = Nokogiri::HTML.parse(text).css('p').first.text
+      @article.update_attributes(summary: summary)
       redirect_to @article
     else
       render 'new'

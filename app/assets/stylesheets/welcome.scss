@@ -4,6 +4,9 @@
 
 .container {
   background-color: #efefef;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  margin: auto;
+  max-width: 85%;
 }
 
 header {
@@ -32,6 +35,14 @@ h2 {
 h3 {
   font-size: 1.3em;
   font-weight: bold;
+}
+
+p {
+  font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.active-page a {
+  color: gold;
 }
 
 .home-nav {
@@ -63,17 +74,30 @@ h3 {
   max-width: 36px;
 }
 
+.main-content {
+  margin: auto;
+  max-width: 85%;
+}
+
+.main-content a {
+  color: #00b0ff;
+}
+
 .summary {
   clear: both;
   padding: 3%;
+}
+
+.summary a {
+  color: #00b0ff;
 }
 
 a {
   text-decoration: none;
 }
 
-a:visited {
-  color: inherit;
+main-content a:visited {
+  color: #00b0ff;
 }
 
 .hr {

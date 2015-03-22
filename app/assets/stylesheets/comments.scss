@@ -1,3 +1,44 @@
 // Place all the styles related to the Comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.comment-list {
+  margin: auto;
+  padding: 3%;
+}
+
+.commenter {
+  font-size: 1.2em;
+  font-stretch: thick;
+}
+
+.comment-body {
+  font-stretch: thin;
+}
+
+.comment-links a {
+  color: #00b0ff;
+}
+
+.comment-form {
+  margin: auto;
+}
+
+.comment-form-commenter input {
+  width: 75%;
+}
+
+#comment_body {
+  height: 200px;
+  width: 75%;
+}
+
+.comment-form-submit input{
+  background-color: #0d355a;
+  border-radius: 5px;
+  color: #e7e7e7;
+}

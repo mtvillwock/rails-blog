@@ -1,15 +1,16 @@
-<p>
+<p class="commenter">
   <strong>Commenter:</strong>
   <%= comment.commenter %>
 </p>
 
-<p>
+<p class="comment-body">
   <strong>Comment:</strong>
   <%= comment.body %>
 </p>
 
-<p>
+<p class="comment-links">
   <%= link_to 'Destroy Comment', [comment.article, comment],
                method: :delete,
                data: { confirm: 'Are you sure?' } %>
+               <!-- remove this when adding AJAX -->
 </p>

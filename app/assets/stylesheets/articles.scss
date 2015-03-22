@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+}
+
 .field_with_errors {
   background-color: #d1e5e1;
 }
@@ -15,13 +19,9 @@ li {
 }
 
 ul.article-links li {
+  color: #00b0ff;
   display: inline;
-}
-
-.container {
-  background-color: #d1e5e1;
-  margin: auto;
-  max-width: 85%;
+  margin-left: 2%;
 }
 
 .article-list {
@@ -29,10 +29,20 @@ ul.article-links li {
   max-width: 85%;
 }
 
+.article-list a {
+  color: #00b0ff;
+}
+
+.new-article a {
+  color: #00b0ff;
+  float: right;
+}
+
 .article {
   background-color: #efefef;
   border-bottom: 1px solid #dbdbdb;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  margin: auto;
+  padding: 3%;
 }
 
 .article-title {
@@ -41,4 +51,42 @@ ul.article-links li {
 
 .article-text {
   font-size: 1.1em;
+}
+
+.article-nav-links li a {
+  color: #00b0ff;
+  margin: auto;
+  padding: 1%;
+}
+
+.edit-article {
+  float: left;
+}
+
+.view-articles {
+  float: right;
+}
+
+.article-form {
+  background-color: #efefef;
+  margin: auto;
+  padding: 1%;
+  width: 50%;
+}
+
+#article_title {
+  background-color: #eee;
+  width: 50%;
+}
+
+#article_text {
+  background-color: #eee;
+  height: 200px;
+  width: 70%;
+}
+
+.article-form-submit input {
+  background-color: #0d355a;
+  border-radius: 5px;
+  color: #00b0ff;
 }
