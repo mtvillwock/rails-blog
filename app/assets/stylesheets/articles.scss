@@ -29,11 +29,19 @@ ul.article-links li {
   max-width: 85%;
 }
 
+.article-list a {
+  color: #00b0ff;
+}
+
+.new-article a {
+  color: #00b0ff;
+  float: right;
+}
+
 .article {
   background-color: #efefef;
   border-bottom: 1px solid #dbdbdb;
   margin: auto;
-  max-width: 85%;
   padding: 3%;
 }
 
