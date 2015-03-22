@@ -53,10 +53,18 @@ ul.article-links li {
   font-size: 1.1em;
 }
 
-.article-nav-links li {
+.article-nav-links li a {
   color: #00b0ff;
-  margin: 1%;
+  margin: auto;
   padding: 1%;
+}
+
+.edit-article {
+  float: left;
+}
+
+.view-articles {
+  float: right;
 }
 
 article-form {
