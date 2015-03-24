@@ -26,7 +26,7 @@ ul.article-links li {
 
 .article-list {
   margin: auto;
-  max-width: 85%;
+  max-width: 90%;
 }
 
 .article-list a {
@@ -47,6 +47,7 @@ ul.article-links li {
 
 .article-title {
   font-size: 1.6em;
+  font-weight: bold;
 }
 
 .article-text {
@@ -70,17 +71,15 @@ ul.article-links li {
 .article-form {
   background-color: #efefef;
   margin: auto;
-  padding: 1%;
-  width: 50%;
+  padding: 3%;
+  width: 85%;
 }
 
 #article_title {
-  background-color: #eee;
   width: 50%;
 }
 
 #article_text {
-  background-color: #eee;
   height: 200px;
   width: 70%;
 }
@@ -88,5 +87,6 @@ ul.article-links li {
 .article-form-submit input {
   background-color: #0d355a;
   border-radius: 5px;
-  color: #00b0ff;
+  color: #e7e7e7;
+  padding: 1%;
 }

@@ -1,4 +1,5 @@
 <div class="comment-form">
+  <h2>Add a comment:</h2>
   <%= form_for([@article, @article.comments.build]) do |f| %>
   <p class="comment-form-commenter">
     <%= f.label :commenter %><br>

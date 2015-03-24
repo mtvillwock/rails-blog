@@ -21,25 +21,22 @@
   <div class="main-content">
     <div class="article">
       <p class="article-title">
-        <strong>Title:</strong>
         <%= @article.title %>
       </p>
 
       <p class="article-text">
-        <strong>Text:</strong>
         <%= @article.text %>
       </p>
     </div>
 
 
-    <div class="comment-list">
+    <div class="comment-list" id="comment-list">
       <h2>Comments</h2>
       <% @article.comments.each do |comment| %>
       <%= render comment %>
       <% end %>
     </div>
 
-    <h2>Add a comment:</h2>
     <%= render 'comments/form' %>
   </div>
 

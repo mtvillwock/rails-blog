@@ -24,12 +24,10 @@ h1,h2,h3 {
 
 h1 {
   font-size: 2em;
-  font-stretch: thick;
 }
 
 h2 {
   font-size: 1.5em;
-  font-stretch: thin;
 }
 
 h3 {
@@ -76,7 +74,7 @@ p {
 
 .main-content {
   margin: auto;
-  max-width: 85%;
+  max-width: 90%;
 }
 
 .main-content a {
@@ -118,7 +116,6 @@ main-content a:visited {
 .project-description {
   float: left;
   margin: auto;
-  padding: 10px;
   max-width: 40%;
 }
 

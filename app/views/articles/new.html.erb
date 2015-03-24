@@ -1,17 +1,23 @@
-<%= render 'welcome/nav' %>
+<div class="container">
+  <%= render 'welcome/nav' %>
 
-<header class="header">
-  <%= link_to '/' do %>
-  <h1>Never Finished</h1>
-  <% end %>
-  <h2>Matt Villwock | Software Developer</h2>
-</header>
+  <header class="header">
+    <%= link_to '/' do %>
+    <h1>Never Finished</h1>
+    <% end %>
+    <h2>Matt Villwock | Software Developer</h2>
+    <div class="article-nav-links">
+      <li class="view-articles">
+        <%= link_to 'Back to articles', articles_path %>
+      </li>
+    </div>
+  </header>
 
-<div class="hr" id="summary"></div>
+  <div class="hr"></div>
 
-<%= render 'form' %>
+  <%= render 'form' %>
 
-<%= link_to 'Back to articles', articles_path %>
-
-<div class="hr" id="summary"></div>
-<%= render 'welcome/nav' %>
+  <div class="hr"></div>
+  <%= render 'welcome/nav' %>
+  <div class="hr"></div>
+</div>
