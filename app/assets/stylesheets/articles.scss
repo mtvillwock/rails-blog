@@ -71,7 +71,6 @@ ul.article-links li {
 .article-form {
   background-color: #efefef;
   margin: auto;
-  padding: 3%;
   width: 85%;
 }
 
@@ -89,4 +88,16 @@ ul.article-links li {
   border-radius: 5px;
   color: #e7e7e7;
   padding: 1%;
+}
+
+.edit-article-header {
+  margin: auto;
+  max-width: 85%;
+  padding: 2%;
+}
+
+.new-article-header {
+  margin: auto;
+  max-width: 85%;
+  padding: 2%;
 }
