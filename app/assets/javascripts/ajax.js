@@ -67,7 +67,6 @@ function createComment(e) {
 }
 
 function buildComment(data) {
-  console.log(data)
   var newComment = "<div class='comment' id=" + data.id + ">"
   +"<p class='commenter'> Posted by: " + data.commenter + "</p>"
   +"<p class='comment-body'>" + data.body + "</p>"
@@ -75,6 +74,9 @@ function buildComment(data) {
   +"<a href=" + "/articles/" + data.article_id + "/comments/" + data.id + ">Delete Comment</a></p></div>"
 
   $('.comment-list').append(newComment);
-  debugger
   $('#' + data.id).children('p').children('a').addClass('delete-comment');
 }
+
+// function clearForm() {
+//   debugger
+// }
