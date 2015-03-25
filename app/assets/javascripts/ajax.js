@@ -75,8 +75,11 @@ function buildComment(data) {
 
   $('.comment-list').append(newComment);
   $('#' + data.id).children('p').children('a').addClass('delete-comment');
+
+  clearForm();
 }
 
-// function clearForm() {
-//   debugger
-// }
+function clearForm() {
+  $('#comment_commenter').val("");
+  $('#comment_body').val("");
+}

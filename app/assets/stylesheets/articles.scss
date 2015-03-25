@@ -21,7 +21,8 @@ li {
 ul.article-links li {
   color: #00b0ff;
   display: inline;
-  margin-left: 2%;
+  margin: auto;
+  padding: 1%;
 }
 
 .article-list {
@@ -60,11 +61,11 @@ ul.article-links li {
   padding: 1%;
 }
 
-.edit-article {
+.article-nav-links .edit-article {
   float: left;
 }
 
-.view-articles {
+.article-nav-links .view-articles {
   float: right;
 }
 
