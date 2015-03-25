@@ -1,16 +1,16 @@
 <div class="comment-form">
   <h2>Add a comment:</h2>
   <%= form_for([@article, @article.comments.build]) do |f| %>
-  <p class="comment-form-commenter">
+  <p>
     <%= f.label :commenter %><br>
     <%= f.text_field :commenter %>
   </p>
-  <p class="comment-form-body">
+  <p>
     <%= f.label :body %><br>
-    <%= f.text_area :body %>
+    <%= f.text_area :body%>
   </p>
-  <p class="comment-form-submit">
-    <%= f.submit %>
+  <p>
+    <%= f.submit class: "comment-form-submit" %>
   </p>
   <% end %>
 </div>
