@@ -76,5 +76,5 @@ function buildComment(data) {
 
   $('.comment-list').append(newComment);
   debugger
-  $('.comment ' + '#' + data.id).children('p').children('a').addClass('delete-comment');
+  $('#' + data.id).children('p').children('a').addClass('delete-comment');
 }
