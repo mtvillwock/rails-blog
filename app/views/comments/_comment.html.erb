@@ -1,14 +1,13 @@
-<p class="commenter">
-  Posted by: <%= comment.commenter %>
-</p>
+<div class="comment" id="<%= comment.id %>">
+  <p class="commenter">
+    Posted by: <%= comment.commenter %>
+  </p>
 
-<p class="comment-body">
-  <%= comment.body %>
-</p>
+  <p class="comment-body">
+    <%= comment.body %>
+  </p>
 
-<p class="comment-links">
-  <%= link_to 'Destroy Comment', [comment.article, comment],
-               method: :delete,
-               data: { confirm: 'Are you sure?' } %>
-               <!-- remove this when adding AJAX -->
-</p>
+  <p class="comment-links">
+    <%= link_to 'Delete Comment', [comment.article, comment], class: "delete-comment" %>
+  </p>
+</div>

@@ -29,16 +29,16 @@ body {
   padding: 3%;
 }
 
-.comment-form-commenter input {
+#comment_commenter {
   width: 75%;
 }
-
+/*These are ideas instead of classes because the form_for helper makes these ids for you*/
 #comment_body {
   height: 150px;
   width: 75%;
 }
 
-.comment-form-submit input{
+.comment-form-submit {
   background-color: #0d355a;
   border-radius: 5px;
   color: #e7e7e7;

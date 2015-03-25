@@ -16,13 +16,11 @@
   <% end %>
 
   <p class="article-form-title">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, placeholder: 'Article Title' %>
   </p>
 
   <p class="article-form-text">
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
+    <%= f.text_area :text, placeholder: "What's on your mind?" %>
   </p>
 
   <p class="article-form-submit">
