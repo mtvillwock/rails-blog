@@ -20,12 +20,12 @@
 
   <div class="main-content">
     <div class="article" id="<%= @article.id %>">
-      <p class="article-title">
+      <h2 class="article-title">
         <%= @article.title %>
-      </p>
+      </h2>
 
       <p class="article-text">
-        <%= @article.text %>
+        <%= markdown(@article.text) %>
       </p>
     </div>
 

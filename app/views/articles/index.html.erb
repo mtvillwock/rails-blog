@@ -16,11 +16,11 @@
     <% unless @articles.nil? %>
     <% @articles.each do |article| %>
     <div class="article">
-      <p class="article-title">
+      <h2 class="article-title">
         <%= article.title %>
-      </p>
+      </h2>
       <p class="article-text">
-        <%= article.summary %>
+        <%= markdown(article.summary) %>
       </p>
       <ul class="article-links">
         <li class="show-article"><%= link_to 'Read More', article_path(article) %></li>
