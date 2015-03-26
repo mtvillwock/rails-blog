@@ -25,9 +25,6 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
     # @article = Article.new(params.require(:article).permit(:title, :text)
     if @article.save
-      text = @article.text
-      summary = Nokogiri::HTML.parse(text).css('p').first.text
-      @article.update_attributes(summary: summary)
       redirect_to @article
     else
       render 'new'
@@ -53,7 +50,7 @@ class ArticlesController < ApplicationController
 
   private
   def article_params
-    params.require(:article).permit(:title, :text)
+    params.require(:article).permit(:title, :text, :summary)
   end
 
 end
