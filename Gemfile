@@ -34,9 +34,6 @@ gem 'coderay'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
-# Use Thin as the app server
-gem 'thin'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -52,3 +49,7 @@ group :development, :test do
 end
 
 gem 'rails_12factor', group: :production
+
+group :production do
+  gem 'thin'
+end
