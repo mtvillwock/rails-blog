@@ -22,6 +22,14 @@ $blue: #1e77e2;
 $turquoise: #0B5E55; //#1D6660;
 // End Variables
 
+// Media queries pending
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+// Example media query^
+
 @import 'nav';
 @mixin color($header-color) {
   h1,h2,h3 {
@@ -41,11 +49,11 @@ body {
   padding: 1%;
 
   h1 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   h3 {
@@ -54,7 +62,7 @@ body {
   }
 
   p {
-    font-size: 0.8em;
+    font-size: 1.0em;
   }
 }
 
@@ -67,17 +75,11 @@ body {
   text-transform: uppercase;
 }
 
+// Need to DRY up max-width
 .header-text {
-  h1,h2 {
-    float: left;
-    max-width: 40%;
-  }
+  h1 { max-width: 60%; }
 
-  p {
-    font-style: italic;
-    float: right;
-    max-width: 40%;
-  }
+  p { font-style: italic; }
 }
 
 .hr{
@@ -108,6 +110,7 @@ body {
 
 .project {}
 
+// Need to DRY these heights out
 #hummingbird{
   background-color: $grey;
   height: 300px;
@@ -149,15 +152,15 @@ body {
   @extend .project-image
 }
 
-// Extract BG color and height into mixin / extend
+
 .about {
   background-color: $turquoise;
-  height: 100px;
+  height: 300px;
 }
 
 .contact {
   background-color: $business-card-green;
-  height: 100px;
+  height: 300px;
 }
 
 /*
