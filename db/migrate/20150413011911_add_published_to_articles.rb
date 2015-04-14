@@ -1,5 +1,5 @@
 class AddPublishedToArticles < ActiveRecord::Migration
   def change
-    add_column :articles, :summary, :boolean, default: false
+    add_column :articles, :published, :boolean, default: false
   end
 end
