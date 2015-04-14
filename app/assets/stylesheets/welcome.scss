@@ -8,18 +8,18 @@ $header-color: #0D355A;
 // $contact-background: ;
 // $nav-background-color;
 $horizontal-rule-color: #e7e7e7;
-// $grey: #BABACA;
+$grey: #BABACA;
 $white-smoke: #F5F5F5;
-// $ghost-white: #F8F8FF;
-// $anti-flash-white: #F2F3F4;
-// $bone-white: #E3DAC9;
-// $dark-grey: #606060;
-$red-background: #120001; //#B0061E; //#b00b00; #C00132;
-//$olive: olive; //#6B8E23; //#556B2F;
+$ghost-white: #F8F8FF;
+$anti-flash-white: #F2F3F4;
+$bone-white: #E3DAC9;
+$dark-grey: #606060;
+$red-background: #B0061E; //#b00b00; #C00132;
+$olive: #6B8E23; //#556B2F;
 $green-background: #346315; //#71970 9/E //#360 //#537732 //#2E512E; // #009925;
-// $business-card-green: #8A9A5B //
-//$blue: #1e77e2;
-//$turquoise: #0B5E55; //#1D6660;
+$business-card-green: #8A9A5B; //
+$blue: #1e77e2;
+$turquoise: #0B5E55; //#1D6660;
 // End Variables
 
 @import 'nav';
@@ -34,7 +34,6 @@ body {
 }
 
 .container{
-  @include color($header-color);
   font-family: $font-stack;
   margin: auto;
   // max-width: 85%;
@@ -60,21 +59,25 @@ body {
 }
 
 .header{
-  clear: both;
+  background-color: $red-background;
+  @include color($header-color);
+  // clear: both;
   margin: auto;
   padding: 1%;
   text-transform: uppercase;
 }
 
 .header-text {
-  float: left;
-  max-width: 40%;
-}
+  h1,h2 {
+    float: left;
+    max-width: 40%;
+  }
 
-.header-quote {
-  font-style: italic;
-  float: right;
-  max-width: 40%;
+  p {
+    font-style: italic;
+    float: right;
+    max-width: 40%;
+  }
 }
 
 .hr{
@@ -84,31 +87,41 @@ body {
 }
 
 .main-content{
+  margin: auto;
   max-width: 90%;
-
   a {
     color: $primary-link-color;
   }
 }
 
 .summary{
+  background-color: $white-smoke;
+  @include color($header-color);
   clear: both;
 }
 
-.project-list{}
-
-.project{}
-
-.hummingbird {
-  background-color: $white-smoke;
+.project-list{
+  h3 {
+    color: $ghost-white;
+  }
 }
 
-.maps {
+.project {}
+
+#hummingbird{
+  background-color: $grey;
+  height: 300px;
+}
+
+#maps {
+  background-color: $blue;
+  height: 300px;
+}
+
+#pending {
   background-color: $green-background;
-}
-
-.pending {
-  background-color: $red-background;
+  color: white;
+  height: 300px;
 }
 
 .project-description{
@@ -120,27 +133,31 @@ body {
 // Need to clean this up
 // the HTML semantics don't seem right
 .project-image{
-  img {
-    float: right;
-    margin: auto;
-    max-height: 300px;
-    max-width: 50%;
-  }
+  float: right;
+  margin: auto;
+  max-height: 300px;
+  max-width: 50%;
 }
 
-.hummingbird-image{
+.hummingbird{
   @extend .project-image;
 }
 .maps-image{
   @extend .project-image;
 }
+.pending{
+  @extend .project-image
+}
 
+// Extract BG color and height into mixin / extend
 .about {
-  background-color: $green-background;
+  background-color: $turquoise;
+  height: 100px;
 }
 
 .contact {
-  background-color: $red-background;
+  background-color: $business-card-green;
+  height: 100px;
 }
 
 /*
