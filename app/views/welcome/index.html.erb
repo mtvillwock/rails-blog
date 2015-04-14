@@ -5,26 +5,24 @@
         <h1>Matt Villwock | Web Developer</h1>
         <% end %>
         <p>What dream can I help you build?</p>
-        <h2></h2>
     </div>
-<!-- <div class="hr"></div> -->
   </header>
 
   <%= render 'nav' %>
 
-  <div class="hr" id="summary"></div>
+  <!-- <div class="hr" id="summary"></div> -->
   <!-- start main content -->
   <div class="main-content">
-    <div class="summary">
+    <section class="summary">
       <h3>About Me</h3>
       <p>Hi, my name is Matt. I'm a web developer, and a recent graduate of <%= link_to 'http://devbootcamp.com/', target: "_blank" do %>Dev Bootcamp <% end %>. I came to web development after getting a taste of it in digital marketing and getting hooked on building things.</p>
       <p>This is my personal website and blog, built using the <%= link_to 'https://github.com/rails/rails', target: "_blank" do %>Ruby on Rails <% end %> web framework. Listed below are my projects, along with links to contact me.</p>
       <p>I love building things, working in teams, and solving problems.</p>
-    </div>
+    </section>
 
-    <div class="hr" id="project-list"></div>
+    <!-- <div class="hr" id="project-list"></div> -->
 
-    <div class="project-list">
+    <section id="project-list">
 
       <div class="project" id="hummingbird">
 
@@ -71,21 +69,22 @@
         </div>
       </div>
     </div>
+  </section>
 
     <div class="hr"></div>
 
-    <div class="about">
+    <section id="about">
       <p>Content Here</p>
     </div>
+  </section>
 
     <div class="hr"></div>
 
-    <div class="contact">
+    <section id="contact">
       <h3>Contact Me | Collaborate</h3>
       <p>API, web app, or landing page – I can help you realize your vision. <%= link_to "mailto:" + ENV["ADMIN_EMAIL"], target: "_blank" do %>Contact me<% end %> and we can discuss building your dream.</p>
       <p>If you're a fellow developer who wants to work on a project, <%= link_to "mailto:" + ENV["ADMIN_EMAIL"], target: "_blank" do %>shoot me an email<% end %> and tell me all about it. I'm always looking for opportunities to help other people.</p>
-    </div>
-  </div>
+    </section>
   <!-- End main content -->
   <div class="hr"></div>
 

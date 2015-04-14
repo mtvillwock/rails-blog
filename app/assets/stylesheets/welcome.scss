@@ -1,12 +1,9 @@
 // Variables
 $font-stack: 'Roboto', Helvetica, sans-serif;
 $primary-background-color: #efefef;
+$secondary-color: #0D355A;
 $primary-link-color: #00b0ff;
 $header-color: #0D355A;
-// $header-background: ;
-// $about-background: ;
-// $contact-background: ;
-// $nav-background-color;
 $horizontal-rule-color: #e7e7e7;
 $grey: #BABACA;
 $white-smoke: #F5F5F5;
@@ -44,7 +41,6 @@ body {
 .container{
   font-family: $font-stack;
   margin: auto;
-  // max-width: 85%;
   max-width: 100%;
   padding: 1%;
 
@@ -67,9 +63,8 @@ body {
 }
 
 .header{
-  background-color: $red-background;
+  background-color: $primary-background-color;
   @include color($header-color);
-  // clear: both;
   margin: auto;
   padding: 1%;
   text-transform: uppercase;
@@ -90,34 +85,29 @@ body {
 
 .main-content{
   margin: auto;
-  max-width: 90%;
   a {
     color: $primary-link-color;
   }
 }
 
 .summary{
-  background-color: $white-smoke;
-  @include color($header-color);
+  // background-color: $white-smoke; // blue
+  background-color: $secondary-color;
+  color: $white-smoke;
+  // @include color($header-color);
   clear: both;
-}
-
-.project-list{
-  h3 {
-    color: $ghost-white;
-  }
 }
 
 .project {}
 
 // Need to DRY these heights out
 #hummingbird{
-  background-color: $grey;
+  background-color: $grey; // black
   height: 300px;
 }
 
 #maps {
-  background-color: $blue;
+  background-color: $blue; // red
   height: 300px;
 }
 
@@ -153,153 +143,12 @@ body {
 }
 
 
-.about {
+#about {
   background-color: $turquoise;
   height: 300px;
 }
 
-.contact {
+#contact {
   background-color: $business-card-green;
   height: 300px;
 }
-
-/*
-.container {
-  background-color: #efefef;
-  font-family: 'Roboto', Helvetica, sans-serif;
-  margin: auto;
-  max-width: 85%;
-}
-
-header {
-  clear: both;
-  margin: auto;
-  max-width: 85%;
-  padding: 1%;
-  text-transform: uppercase;
-}
-
-h1,h2,h3 {
-  color: #0d355a;
-  font-family: 'Roboto', Helvetica, sans-serif;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
-h3 {
-  font-size: 1.3em;
-  font-weight: bold;
-}
-
-p {
-  font-family: 'Roboto', Helvetica, sans-serif;
-}
-
-.active-page a {
-  color: gold;
-}
-
-.home-nav {
-  padding: 1%;
-}
-
-.nav-items a {
-  float: left;
-  margin: auto 10px;
-  color: #5a5a5a;
-  font-size: 1.05em;
-  padding: 14px 10px;
-  text-transform: uppercase;
-}
-
-.contact-icons {
-  float: right;
-}
-
-.social-media-icon {
-  display: inline;
-  margin: auto;
-}
-
-.social-media-icon img {
-  display: inline;
-  margin: auto 10px;
-  max-height: 36px;
-  max-width: 36px;
-}
-
-.main-content {
-  margin: auto;
-  max-width: 90%;
-}
-
-.main-content a {
-  color: #00b0ff;
-}
-
-.summary {
-  clear: both;
-  padding: 3%;
-}
-
-.summary a {
-  color: #00b0ff;
-}
-
-a {
-  text-decoration: none;
-}
-
-main-content a:visited {
-  color: #00b0ff;
-}
-
-.hr {
-  border: 1px #e7e7e7 solid;
-  clear: both;
-  margin: 1%;
-}
-
-.project-list {
-  background-color: #efefef;
-  margin: auto;
-}
-
-.project {
-  padding: 3%;
-}
-
-.project-description {
-  float: left;
-  margin: auto;
-  max-width: 40%;
-}
-
-.hummingbird-image img {
-  float: right;
-  margin: auto;
-  max-height: 300px;
-  max-width: 30%;
-}
-
-.maps-image img {
-  float: right;
-  margin: auto;
-  max-height: 300px;
-  max-width: 50%;
-}
-
-
-.project-image img {
-  float: right;
-  margin: auto;
-  max-height: 300px;
-  max-width: 50%;
-}
-*/

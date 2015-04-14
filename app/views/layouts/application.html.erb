@@ -2,16 +2,15 @@
 <html>
 <head>
   <title>Matt Villwock | Software Developer</title>
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link href='//fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <meta content="Matt Villwock is a web developer and recent graduate of Dev Bootcamp. Click here to contact Matt or see his projects.">
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'>
 </head>
 <body>
 
   <%= yield %>
-
+  <!-- moved here to allow page to load and then render styling and fonts -->
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>
