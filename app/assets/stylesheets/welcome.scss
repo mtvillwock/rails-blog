@@ -62,16 +62,13 @@ body {
   }
 }
 
-.header{
+header{
   background-color: $primary-background-color;
   @include color($header-color);
   margin: auto;
   padding: 1%;
   text-transform: uppercase;
-}
 
-// Need to DRY up max-width
-.header-text {
   h1 { max-width: 60%; }
 
   p { font-style: italic; }

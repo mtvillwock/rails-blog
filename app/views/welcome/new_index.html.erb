@@ -1,19 +1,104 @@
-<div class="">
+<div class="container"> -->
   <section id="splash/hero/landing/welcome">
+    <header>
+      <%= link_to '/' do %>
+      <h1>Matt Villwock</h1>
+      <% end %>
+      <h2>Web Developer</h2>
+      <p>What dream can I help you build?</p>
+    </div>
+  </header>
 
-  </section>
+  <%= render 'nav' %>
+  <!--
+  Maybe revise this to make it more semantic by pulling it into the header unless having it separate is better because of modularity
+-->
+<p>Hi, my name is Matt. I'm a web developer, and a recent graduate of <%= link_to 'http://devbootcamp.com/', target: "_blank" do %>Dev Bootcamp <% end %>. I came to web development after getting a taste of it in digital marketing and getting hooked on building things.</p>
+<p>This is my personal website and blog, built using the <%= link_to 'https://github.com/rails/rails', target: "_blank" do %>Ruby on Rails <% end %> web framework. Listed below are my projects, along with links to contact me.</p>
+<p>I love building things, working in teams, and solving problems.</p>
+</section>
 
-  <section id="projects">
+<section id="projects">
+  <!-- <div class="container"> -->
 
+  <!-- DRY this up later with React or Angular -->
+
+  <!-- synopsis of projects -->
+  <div class="gallery">
+    <div class="gallery details">
+      <h2></h2>
+      <p></p>
+      <p></p>
+    </div>
+  </div>
+
+  <!-- first project -->
+  <div class="gallery">
+    <ul>
+      <li><%= link_to 'https://github.com/jeremymcintyre/hummingbird', :class => "image" target: "_blank" do %>
+        <%= image_tag('hummingbird-small.png', :alt => "hummingbird") %>
+        <% end %></li>
+        <li> <span>Hummingbird</span> <span>texts delivered when you want.</span> </li>
+      </ul>
+    </div>
+    <!-- second project -->
+    <div class="gallery">
+      <ul>
+        <li><%= link_to 'https:/github.com/mtvillwock/maps-with-friends', target: "_blank" do %>
+          <%= image_tag('maps-with-friends.jpg', :class => "image", :alt => "maps with friends") %>
+          <% end %>
+        </li>
+        <li>
+          <span>Maps with Friends</span>
+          <span>See the spread of your friend group.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="gallery">
+      <ul>
+        <li><%= link_to '#' do %>
+          <%= image_tag("geocode.jpg", :class => "image", :alt => "pending") %>
+          <% end %>
+        </li>
+        <li>
+          <span>Hotel Concierge</span>
+          <span>App for tracking bag storage at hotels.</span>
+        </li>
+      </ul>
+    </div>
+    <!-- end projects here -->
+    <!-- </div> -->
   </section>
 
   <section id="writing">
-
+    <div class="gallery">
+      <ul>
+        <li><%= link_to '/', :class => "image" target: "_blank" do %>
+          <%= image_tag('#', :alt => "this site") %>
+          <% end %>
+        </li>
+        <li>
+          <span>This Site</span>
+          <span>Personal website and blogging platform.</span>
+        </li>
+      </ul>
+    </div>
+    <!-- <div class="container"> -->
+    <!-- end writing here -->
+    <!-- </div> -->
   </section>
 
   <section id="contact">
-
+    <!-- <div class="container"> -->
+    <%= render 'nav'  %>
+    <!-- end writing here -->
+    <!-- </div> -->
   </section>
 
-  <section class="credits"></section>
-</div>
+  <section class="credits">
+    <p>
+      <i class="fa fa-copyright"></i> Matt Villwock 2015
+    </p>
+  </section>
+<!-- </div>
