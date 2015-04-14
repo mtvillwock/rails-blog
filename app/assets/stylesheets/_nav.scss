@@ -1,0 +1,28 @@
+.contact-icons{
+  float: right;
+}
+
+.home-nav{
+  padding: 1%;
+}
+
+.nav-items {
+  a {
+    float: left;
+    margin: auto 10px;
+    color: #5a5a5a;
+    font-size: 1.05em;
+    padding: 14px 10px;
+    text-transform: uppercase;
+  }
+}
+
+.social-media-icon {
+  display: inline;
+  img {
+    // max-height: 100px / 960px * 100%;
+    max-height: 36px;
+    // max-width: 100px / 960px * 100%;
+    max-width: 36px;
+  }
+}
