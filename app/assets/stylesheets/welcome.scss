@@ -1,11 +1,29 @@
+// Variables
+$font-stack: 'Roboto', Helvetica, sans-serif;
+$primary-background-color: #efefef;
+$primary-link-color: #00b0ff;
+// $header-background: ;
+// $about-background: ;
+// $contact-background: ;
+// $nav-background color;
+// $nav-link-color: ;
+$horizontal-rule-color: #e7e7e7;
+//$project-list-background-color: #efefef;
+// End Variables
+
 .container{}
+
 .header{}
+
 .hr{}
-.hummingbird-image{}
+
 .main-content{}
-.maps-image{}
+
+.summary{}
+
+.project-list{}
 .project{}
 .project-description{}
 .project-image{}
-.project-list{}
-.summary{}
+.hummingbird-image{}
+.maps-image{}

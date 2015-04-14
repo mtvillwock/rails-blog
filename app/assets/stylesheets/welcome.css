@@ -1,7 +1,7 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+/*
 .container {
   background-color: #efefef;
   font-family: 'Roboto', Helvetica, sans-serif;
@@ -133,10 +133,11 @@ main-content a:visited {
   max-width: 50%;
 }
 
-/* rename this when project is added*/
+
 .project-image img {
   float: right;
   margin: auto;
   max-height: 300px;
   max-width: 50%;
 }
+*/
