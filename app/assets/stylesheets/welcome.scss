@@ -7,21 +7,19 @@ $header-color: #0D355A;
 // $about-background: ;
 // $contact-background: ;
 // $nav-background-color;
-// $nav-link-color: ;
 $horizontal-rule-color: #e7e7e7;
-//$project-list-background-color: #efefef;
-// $grey-background-color: #BABACA;
-// $white-smoke: #F5F5F5;
+// $grey: #BABACA;
+$white-smoke: #F5F5F5;
 // $ghost-white: #F8F8FF;
 // $anti-flash-white: #F2F3F4;
 // $bone-white: #E3DAC9;
-// $dark-grey-background-color: #606060;
-//$red-background-color: #120001; //#B0061E; //#b00b00; #C00132;
+// $dark-grey: #606060;
+$red-background: #120001; //#B0061E; //#b00b00; #C00132;
 //$olive: olive; //#6B8E23; //#556B2F;
-// $green-background-color: #346315; //#71970 9/E //#360 //#537732 //#2E512E; // #009925;
+$green-background: #346315; //#71970 9/E //#360 //#537732 //#2E512E; // #009925;
 // $business-card-green: #8A9A5B //
-//$blue-background-color: #1e77e2;
-//$turquoise-background-color: #0B5E55; //#1D6660;
+//$blue: #1e77e2;
+//$turquoise: #0B5E55; //#1D6660;
 // End Variables
 
 @import 'nav';
@@ -31,8 +29,11 @@ $horizontal-rule-color: #e7e7e7;
   }
 }
 
-.container{
+body {
   background-color: $primary-background-color;
+}
+
+.container{
   @include color($header-color);
   font-family: $font-stack;
   margin: auto;
@@ -51,6 +52,10 @@ $horizontal-rule-color: #e7e7e7;
   h3 {
     font-size: 1.3em;
     font-weight: bold;
+  }
+
+  p {
+    font-size: 0.8em;
   }
 }
 
@@ -90,18 +95,30 @@ $horizontal-rule-color: #e7e7e7;
   clear: both;
 }
 
-.project-list{
+.project-list{}
 
-}
-.project{
+.project{}
 
+.hummingbird {
+  background-color: $white-smoke;
 }
+
+.maps {
+  background-color: $green-background;
+}
+
+.pending {
+  background-color: $red-background;
+}
+
 .project-description{
   float: left;
   margin: auto;
   max-width: 40%;
 }
 
+// Need to clean this up
+// the HTML semantics don't seem right
 .project-image{
   img {
     float: right;
@@ -118,6 +135,13 @@ $horizontal-rule-color: #e7e7e7;
   @extend .project-image;
 }
 
+.about {
+  background-color: $green-background;
+}
+
+.contact {
+  background-color: $red-background;
+}
 
 /*
 .container {

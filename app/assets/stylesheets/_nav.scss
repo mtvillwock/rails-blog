@@ -1,3 +1,5 @@
+$nav-link-color: #5a5a5a;
+
 .contact-icons{
   float: right;
 }
@@ -10,7 +12,7 @@
   a {
     float: left;
     margin: auto 10px;
-    color: #5a5a5a;
+    color: $nav-link-color;
     font-size: 1.05em;
     padding: 14px 10px;
     text-transform: uppercase;
