@@ -24,7 +24,7 @@ $turquoise: #0B5E55; //#1D6660;
   .container {
     width: 85%;
     padding: 0; }
-}
+  }
 // Example media query^
 
 @import 'nav';
@@ -34,8 +34,38 @@ $turquoise: #0B5E55; //#1D6660;
   }
 }
 
-body {
+html, body {
   background-color: $primary-background-color;
+  margin: 0;
+  padding: 0;
+
+  div {
+    border: 2px solid #1c3;
+  }
+
+
+
+  h1,h2,h3 {
+    border: 2px solid yellow;
+  }
+
+  a {
+    border: 2px solid #1ce;
+  }
+
+  p {
+    border: 2px solid red;
+  }
+
+  img {
+    border: 2px solid purple;
+  }
+}
+
+.hr{
+  border: 1px solid $horizontal-rule-color;
+  clear: both;
+  margin: 0;
 }
 
 .container{
@@ -62,90 +92,186 @@ body {
   }
 }
 
-header{
-  background-color: $primary-background-color;
-  @include color($header-color);
-  margin: auto;
-  padding: 1%;
-  text-transform: uppercase;
-
-  h1 { max-width: 60%; }
-
-  p { font-style: italic; }
-}
-
-.hr{
-  border: 1px solid $horizontal-rule-color;
+.gallery{
   clear: both;
-  margin: 1%;
-}
+  padding: 1%;
+  h3,p {
+    float: left;
+    margin-left: 5%;
+    max-width: 50%;
+  }
 
-.main-content{
-  margin: auto;
-  a {
-    color: $primary-link-color;
+  img {
+    float: right;
+    margin-right: 5%;
+    max-height: 300px;
+    max-width: 40%;
   }
 }
 
-.summary{
-  // background-color: $white-smoke; // blue
-  background-color: $secondary-color;
-  color: $white-smoke;
-  // @include color($header-color);
-  clear: both;
+.gallery-details{
+  h3 {}
+  p {}
 }
 
-.project {}
+#splash{
+  background-color: $white-smoke;
+  // background-color: $primary-background-color;
+  padding: 3%;
+  .header{
+    @include color($header-color);
+    margin: auto;
+    text-transform: uppercase;
+    width: 100%;
 
-// Need to DRY these heights out
-#hummingbird{
-  background-color: $grey; // black
-  height: 300px;
+    h1,h2 {
+      display: block;
+      float: left;
+      max-width: 40%;
+    }
+    // p { font-style: italic; }
+  }
+
+  .intro {
+    float: right;
+    margin: auto;
+    width: 40%;
+  }
 }
 
-#maps {
-  background-color: $blue; // red
-  height: 300px;
-}
-
-#pending {
+#projects{
+  @extend .gallery;
   background-color: $green-background;
-  color: white;
-  height: 300px;
+  color: $white-smoke;
 }
 
-.project-description{
-  float: left;
-  margin: auto;
-  max-width: 40%;
+#writing{
+  @extend .gallery;
+  background-color: $red-background;
 }
 
-// Need to clean this up
-// the HTML semantics don't seem right
-.project-image{
-  float: right;
-  margin: auto;
-  max-height: 300px;
-  max-width: 50%;
+#contact{
+  @extend .gallery;
+  background-color: $grey;
 }
 
-.hummingbird{
-  @extend .project-image;
+.credits{
+  text-align: center;
 }
-.maps-image{
-  @extend .project-image;
-}
-.pending{
-  @extend .project-image
-}
+.fa{}
+.fa-copyright{}
 
 
-#about {
-  background-color: $turquoise;
-  height: 300px;
-}
+// .container{
+//   font-family: $font-stack;
+//   margin: auto;
+//   max-width: 100%;
+//   padding: 1%;
 
-#contact {
-  background-color: $business-card-green;
-  height: 300px;
-}
+//   h1 {
+//     font-size: 1.8em;
+//   }
+
+//   h2 {
+//     font-size: 1.4em;
+//   }
+
+//   h3 {
+//     font-size: 1.3em;
+//     font-weight: bold;
+//   }
+
+//   p {
+//     font-size: 1.0em;
+//   }
+// }
+
+// header{
+//   background-color: $primary-background-color;
+//   @include color($header-color);
+//   margin: auto;
+//   padding: 1%;
+//   text-transform: uppercase;
+
+//   h1 { max-width: 60%; }
+
+//   p { font-style: italic; }
+// }
+
+
+
+// .hr{
+//   border: 1px solid $horizontal-rule-color;
+//   clear: both;
+//   margin: 1%;
+// }
+
+// .main-content{
+//   margin: auto;
+//   a {
+//     color: $primary-link-color;
+//   }
+// }
+
+// .summary{
+//   // background-color: $white-smoke; // blue
+//   background-color: $secondary-color;
+//   color: $white-smoke;
+//   // @include color($header-color);
+//   clear: both;
+// }
+
+// .project {}
+
+// // Need to DRY these heights out
+// #hummingbird{
+//   background-color: $grey; // black
+//   height: 300px;
+// }
+
+// #maps {
+//   background-color: $blue; // red
+//   height: 300px;
+// }
+
+// #pending {
+//   background-color: $green-background;
+//   color: white;
+//   height: 300px;
+// }
+
+// .project-description{
+//   float: left;
+//   margin: auto;
+//   max-width: 40%;
+// }
+
+// // Need to clean this up
+// // the HTML semantics don't seem right
+// .project-image{
+//   float: right;
+//   margin: auto;
+//   max-height: 300px;
+//   max-width: 50%;
+// }
+
+// .hummingbird{
+//   @extend .project-image;
+// }
+// .maps-image{
+//   @extend .project-image;
+// }
+// .pending{
+//   @extend .project-image
+// }
+
+
+// #about {
+//   background-color: $turquoise;
+//   height: 300px;
+// }
+
+// #contact {
+//   background-color: $business-card-green;
+//   height: 300px;
+// }

@@ -1,10 +1,6 @@
 $nav-link-color: #5a5a5a;
 
-.contact-icons{
-  float: right;
-}
-
-.home-nav{
+nav {
   padding: 1%;
 }
 
@@ -19,12 +15,14 @@ $nav-link-color: #5a5a5a;
   }
 }
 
-.social-media-icon {
+.contact-icons{
+  float: right;
   display: inline;
   img {
-    // max-height: 100px / 960px * 100%;
     max-height: 36px;
-    // max-width: 100px / 960px * 100%;
     max-width: 36px;
+    margin: auto 10px;
+    // max-height: 100px / 960px * 100%;
+    // max-width: 100px / 960px * 100%;
   }
 }

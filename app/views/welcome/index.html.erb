@@ -1,95 +1,104 @@
 <div class="container">
-  <header class="header">
-    <div class="header-text">
-        <%= link_to '/' do %>
-        <h1>Matt Villwock | Web Developer</h1>
-        <% end %>
-        <p>What dream can I help you build?</p>
+<%= render 'nav' %>
+<div class="hr"></div>
+
+  <section id="splash">
+    <div class='header'>
+      <%= link_to '/' do %><h1>Matt Villwock</h1><% end %>
+      <h2>Web Developer</h2>
     </div>
-  </header>
+    <div class="intro">
+      <p>Hi, I'm Matt, a web developer who loves learning every day and building meaningful things with other people.</p>
+      <p>What dream can I help you build?</p>
+    </div>
+  </section>
 
-  <%= render 'nav' %>
+  <div class="hr"></div>
 
-  <!-- <div class="hr" id="summary"></div> -->
-  <!-- start main content -->
-  <div class="main-content">
-    <section class="summary">
-      <h3>About Me</h3>
-      <p>Hi, my name is Matt. I'm a web developer, and a recent graduate of <%= link_to 'http://devbootcamp.com/', target: "_blank" do %>Dev Bootcamp <% end %>. I came to web development after getting a taste of it in digital marketing and getting hooked on building things.</p>
-      <p>This is my personal website and blog, built using the <%= link_to 'https://github.com/rails/rails', target: "_blank" do %>Ruby on Rails <% end %> web framework. Listed below are my projects, along with links to contact me.</p>
-      <p>I love building things, working in teams, and solving problems.</p>
-    </section>
+  <section id="projects">
+    <!-- DRY this up later with React or Angular -->
+    <!-- synopsis of projects -->
+    <div class="gallery">
+      <div class="gallery details">
+        <h3>Projects</h3>
+        <p>I build web apps and APIs, primarily using Ruby on Rails and Postgres. I think SCSS is brilliant and that concise, semantic HTML and CSS is beautiful.</p>
+        <p>I'm always looking for new tech to learn. Next on my agenda is Node.js, React, and NoSQL databases.</p>
+      </div>
+    </div>
 
-    <!-- <div class="hr" id="project-list"></div> -->
-
-    <section id="project-list">
-
-      <div class="project" id="hummingbird">
-
-        <%= link_to 'https://github.com/jeremymcintyre/hummingbird', target: "_blank" do %>
-        <%= image_tag('hummingbird-small.png', :alt => "hummingbird") %>
-        <% end %>
-
-        <div class="project-description">
+    <!-- first project -->
+    <div class="gallery">
+      <ul>
+        <li>
           <h3>Hummingbird</h3>
-          <p>Hummingbird was my final project at Dev Bootcamp. </p>
-          <p>The app allows users to schedule text messages to be delivered at a more optimal time. </p>
-          <p>Our team built the app in seven days, using a Ruby on Rails API back-end with an <%= link_to 'http://ionicframework.com/', target: "_blank" do %>Ionic<% end %> and <%= link_to 'https://angularjs.org/', target: "_blank" do %>Angular.js<% end %> front-end.</p>
-        </div>
-      </div>
-
-      <div class="hr"></div>
-
-      <div class="project" id="maps">
-
-        <%= link_to 'https:/github.com/mtvillwock/maps-with-friends', target: "_blank" do %>
-        <%= image_tag('maps-with-friends.jpg', :class => "maps-image", :alt => "maps with friends") %>
-        <% end %>
-
-        <div class="project-description">
+          <p>texts delivered when you want.</p>
+        </li>
+        <li><%= link_to 'https://github.com/jeremymcintyre/hummingbird', :class => "image", target: "_blank" do %>
+          <%= image_tag('hummingbird-small.png', :class => "image", :alt => "hummingbird") %>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+    <!-- second project -->
+    <div class="gallery">
+      <ul>
+        <li>
           <h3>Maps with Friends</h3>
-          <p>Maps With Friends is a side project I am working on during my job search after graduating from Dev Bootcamp. </p>
-          <p>A conversation with a friend from high school gave me the idea to build something that would allow me to visualize the diverse locations where my friends had scattered across the country. </p>
-          <p>Technologies used include <%= link_to 'http://www.sinatrarb.com/', target: "_blank" do %>Sinatra
-            <% end %>, JavaScript, and the <%= link_to 'https://developers.google.com/maps/documentation/javascript/', target: "_blank" do %>Google Maps API<% end %>.</p>
-        </div>
-      </div>
+          <p>See the spread of your friend group.</p>
+        </li>
+        <li><%= link_to 'https:/github.com/mtvillwock/maps-with-friends', target: "_blank" do %>
+          <%= image_tag('maps-with-friends.jpg', :class => "image", :alt => "maps with friends") %>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+    <!-- third project -->
+    <div class="gallery">
+      <ul>
+        <li>
+          <h3>Hotel Concierge</h3>
+          <p>App for tracking bag storage at hotels.</p>
+        </li>
+        <li><%= link_to '#' do %>
+          <%= image_tag("geocode.jpg", :class => "image", :alt => "pending") %>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+    <!-- end projects here -->
+  </section>
 
-      <div class="hr"></div>
+  <div class="hr"></div>
+  <section id="writing">
+    <div class="gallery">
+      <ul>
+        <li><%= link_to '/', :class => "image", target: "_blank" do %>
+          <%= image_tag('Villwock_ODM.png', :alt => "this site") %>
+          <% end %>
+        </li>
+        <li>
+          <h3>This Site</h3>
+          <p>Personal website and blogging platform.</p>
+        </li>
+      </ul>
+    </div>
+    <!-- end writing here -->
+  </section>
 
-      <div class="project" id="pending">
-
-        <%= link_to '#' do %>
-        <%= image_tag("geocode.jpg", :class => "pending", :alt => "pending project") %>
-        <% end %>
-
-        <div class="project-description">
-          <h3>Project To Be</h3>
-          <p>What can I help you build?</p>
-        </div>
-      </div>
+  <div class="hr"></div>
+  <section id="contact">
+    <div class="gallery">
+      <p>Hollatchaboi</p>
     </div>
   </section>
 
-    <div class="hr"></div>
-
-    <section id="about">
-      <p>Content Here</p>
-    </div>
-  </section>
-
-    <div class="hr"></div>
-
-    <section id="contact">
-      <h3>Contact Me | Collaborate</h3>
-      <p>API, web app, or landing page – I can help you realize your vision. <%= link_to "mailto:" + ENV["ADMIN_EMAIL"], target: "_blank" do %>Contact me<% end %> and we can discuss building your dream.</p>
-      <p>If you're a fellow developer who wants to work on a project, <%= link_to "mailto:" + ENV["ADMIN_EMAIL"], target: "_blank" do %>shoot me an email<% end %> and tell me all about it. I'm always looking for opportunities to help other people.</p>
-    </section>
-  <!-- End main content -->
-  <div class="hr"></div>
-
-  <%= render 'nav' %>
+  <!-- <div class="hr"></div>
+  <section class="credits">
+    <p>
+      <i class="fa fa-copyright">Matt Villwock 2015</i>
+    </p>
+  </section> -->
 
   <div class="hr"></div>
+  <%= render 'nav'  %>
 </div>
-
