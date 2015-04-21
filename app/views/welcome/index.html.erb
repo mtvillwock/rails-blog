@@ -32,9 +32,10 @@
         <li>
           <h3>Hummingbird</h3>
           <p>texts delivered when you want.</p>
+          <p>Description of project, role, who the work was for, technologies used, date worked on/finished.</p>
         </li>
         <li><%= link_to 'https://github.com/jeremymcintyre/hummingbird', :class => "image", target: "_blank" do %>
-          <%= image_tag('hummingbird-small.png', :class => "image", :alt => "hummingbird") %>
+          <%= image_tag('hummingbird-demo.jpg', :class => "image", :alt => "hummingbird") %>
           <% end %>
         </li>
       </ul>
@@ -43,11 +44,11 @@
     <div class="gallery">
       <ul>
         <li>
-          <h3>Maps with Friends</h3>
-          <p>See the spread of your friend group.</p>
+          <h3>MessageV</h3>
+          <p>Send a message to any mobile phone in the USA.</p>
         </li>
-        <li><%= link_to 'https:/github.com/mtvillwock/maps-with-friends', target: "_blank" do %>
-          <%= image_tag('maps-with-friends.jpg', :class => "image", :alt => "maps with friends") %>
+        <li><%= link_to 'https:/github.com/mtvillwock/messagev', target: "_blank" do %>
+          <%= image_tag('messagev.jpg', :class => "image", :alt => "MessageV") %>
           <% end %>
         </li>
       </ul>
@@ -56,11 +57,13 @@
     <div class="gallery">
       <ul>
         <li>
-          <h3>Hotel Concierge</h3>
-          <p>App for tracking bag storage at hotels.</p>
+          <%= link_to 'https://hotel-locker-system.herokuapp.com', target: "_blank" do %>
+          <h3>Hotel Concierge Locker System</h3>
+          <% end %>
+          <p>Track bags stored in lockers and retrieve them by redeeming tickets.</p>
         </li>
-        <li><%= link_to '#' do %>
-          <%= image_tag("geocode.jpg", :class => "image", :alt => "pending") %>
+        <li><%= link_to 'https:/github.com/mtvillwock/hotel_concierge_locker_system', target: "_blank" do %>
+          <%= image_tag("hotel-concierge-locker-system.jpg", :class => "image", :alt => "pending") %>
           <% end %>
         </li>
       </ul>
@@ -98,7 +101,4 @@
       <i class="fa fa-copyright">Matt Villwock 2015</i>
     </p>
   </section> -->
-
-  <div class="hr"></div>
-  <%= render 'nav'  %>
 </div>
