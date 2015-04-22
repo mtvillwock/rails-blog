@@ -1,18 +1,5 @@
 <div class="container">
-<%= render 'nav' %>
-<div class="hr"></div>
-<!-- Tear down, rebuild one thing at a time w CSS to see what's doing what -->
-  <section id="splash">
-    <div class='header'>
-      <%= link_to '/' do %><h1>Matt Villwock</h1><% end %>
-      <h2>Web Developer</h2>
-    </div>
-    <div class="intro">
-      <p>Hi, I'm Matt, a web developer who loves learning every day and building meaningful things with other people.</p>
-      <p>What dream can I help you build?</p>
-    </div>
-  </section>
-
+  <%= render 'nav' %>
   <div class="hr"></div>
 
   <section id="projects">
@@ -30,7 +17,7 @@
     <div class="gallery">
       <ul>
         <li>
-          <h3>Hummingbird</h3>
+          <h3>Hummingbird (February)</h3>
           <p>texts delivered when you want.</p>
           <p>Description of project, role, who the work was for, technologies used, date worked on/finished.</p>
         </li>
@@ -46,7 +33,7 @@
       <!-- More impressive because it is Rails -->
       <ul>
         <li>
-          <h3>MessageV</h3>
+          <h3>MessageV (January)</h3>
           <p>Send a message to any mobile phone in the USA.</p>
         </li>
         <li><%= link_to 'https:/github.com/mtvillwock/messagev', target: "_blank" do %>
@@ -60,13 +47,26 @@
       <ul>
         <li>
           <%= link_to 'https://hotel-locker-system.herokuapp.com', target: "_blank" do %>
-          <h3>Hotel Concierge Locker System</h3>
+          <h3>Hotel Concierge Locker System(April)</h3>
           <% end %>
           <p>Track bags stored in lockers and retrieve them by redeeming tickets.</p>
         </li>
         <li><%= link_to 'https:/github.com/mtvillwock/hotel_concierge_locker_system', target: "_blank" do %>
           <%= image_tag("hotel-concierge-locker-system.jpg", :class => "image", :alt => "pending") %>
           <% end %>
+        </li>
+      </ul>
+    </div>
+    <!-- 4th project -->
+    <div class="gallery">
+      <ul>
+        <li><%= link_to '/', :class => "image", target: "_blank" do %>
+          <%= image_tag('Villwock_ODM.png', :alt => "this site") %>
+          <% end %>
+        </li>
+        <li>
+          <h3>This Site (March)</h3>
+          <p>Personal website and blogging platform. Built with Rails, SCSS, and love.</p>
         </li>
       </ul>
     </div>
@@ -77,25 +77,24 @@
   <section id="writing">
     <div class="gallery">
       <ul>
-        <li><%= link_to '/', :class => "image", target: "_blank" do %>
-          <%= image_tag('Villwock_ODM.png', :alt => "this site") %>
-          <% end %>
+        <li>
+          <%= image_tag('villwock-hawaii.jpg', :class => 'image', :alt => "this site") %>
         </li>
         <li>
-          <h3>This Site</h3>
-          <p>Personal website and blogging platform.</p>
+          <h3>Writing</h3>
+          <p>I've been a writer all my life, and you'll rarely see me without a pen and notebook on hand. Whether it's fiction in my spare time, or documentation for code, I love writing. Check out my <%= link_to articles_path do %>blog<% end %> for recent musings.</p>
         </li>
       </ul>
     </div>
     <!-- end writing here -->
   </section>
 
-  <div class="hr"></div>
+  <!-- <div class="hr"></div>
   <section id="contact">
     <div class="gallery">
-      <p>Hollatchaboi</p>
+      <p>Contact me.</p>
     </div>
-  </section>
+  </section> -->
 
   <!-- <div class="hr"></div>
   <section class="credits">

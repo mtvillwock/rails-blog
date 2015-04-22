@@ -2,11 +2,16 @@ $nav-link-color: #5a5a5a;
 
 nav {
   padding: 1%;
+  ul {
+    li {
+      display: inline;
+    }
+  }
 }
 
 .nav-items {
+  float: left;
   a {
-    float: left;
     margin: auto 10px;
     color: $nav-link-color;
     font-size: 1.05em;
@@ -17,7 +22,6 @@ nav {
 
 .contact-icons{
   float: right;
-  display: inline;
   img {
     max-height: 36px;
     max-width: 36px;

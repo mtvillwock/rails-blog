@@ -1,166 +1,78 @@
-// Variables
-$font-stack: 'Roboto', Helvetica, sans-serif;
-$primary-background-color: #efefef;
-$secondary-color: #0D355A;
-$primary-link-color: #00b0ff;
-$header-color: #0D355A;
-$horizontal-rule-color: #e7e7e7;
-$grey: #BABACA;
-$white-smoke: #F5F5F5;
-$ghost-white: #F8F8FF;
-$anti-flash-white: #F2F3F4;
-$bone-white: #E3DAC9;
-$dark-grey: #606060;
-$red-background: #B0061E; //#b00b00; #C00132;
-$olive: #6B8E23; //#556B2F;
-$green-background: #346315; //#71970 9/E //#360 //#537732 //#2E512E; // #009925;
-$business-card-green: #8A9A5B; //
-$blue: #1e77e2;
-$turquoise: #0B5E55; //#1D6660;
-// End Variables
-
-// Media queries pending
-@media (min-width: 400px) {
-  .container {
-    width: 85%;
-    padding: 0; }
-  }
-// Example media query^
-
-@import 'nav';
-@mixin color($header-color) {
-  h1,h2,h3 {
-    color: $header-color;
-  }
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 html, body {
-  background-color: $primary-background-color;
+  height: 100%;
   margin: 0;
   padding: 0;
-
-  div {
-    border: 2px solid #1c3;
-  }
-
-
-
-  h1,h2,h3 {
-    border: 2px solid yellow;
-  }
-
-  a {
-    border: 2px solid #1ce;
-  }
-
-  p {
-    border: 2px solid red;
-  }
-
-  img {
-    border: 2px solid purple;
-  }
+  width: 100%;
 }
 
-.hr{
-  border: 1px solid $horizontal-rule-color;
-  clear: both;
-  margin: 0;
-}
+// importing partial stylesheet
+@import 'nav';
 
-.container{
-  font-family: $font-stack;
-  margin: auto;
-  max-width: 100%;
-  padding: 1%;
+// // Variables
+// $font-stack: 'Roboto', Helvetica, sans-serif;
+// $primary-background-color: #efefef;
+// $secondary-color: #0D355A;
+// $primary-link-color: #00b0ff;
+// $header-color: #0D355A;
+// $horizontal-rule-color: #e7e7e7;
+// $grey: #BABACA;
+// $white-smoke: #F5F5F5;
+// $red-background: #B0061E; //#b00b00; #C00132;
+// $green-background: #346315; //#71970 9/E //#360 //#537732 //#2E512E; // #009925;
+// $dark-grey: #606060;
+// // End Variables
 
-  h1 {
-    font-size: 1.8em;
-  }
+// // Media queries pending
+// @media (min-width: 400px) {
+//   .container {
+//     width: 85%;
+//     padding: 0; }
+//   }
+// // Example media query^
 
-  h2 {
-    font-size: 1.4em;
-  }
 
-  h3 {
-    font-size: 1.3em;
-    font-weight: bold;
-  }
+// @mixin color($header-color) {
+//   h1,h2,h3 {
+//     color: $header-color;
+//   }
+// }
 
-  p {
-    font-size: 1.0em;
-  }
-}
+// html, body {
+//   background-color: $primary-background-color;
+//   margin: 0;
+//   padding: 0;
 
-.gallery{
-  clear: both;
-  padding: 1%;
-  h3,p {
-    float: left;
-    margin-left: 5%;
-    max-width: 50%;
-  }
+//   div {
+//     border: 2px solid #1c3;
+//   }
 
-  img {
-    float: right;
-    margin-right: 5%;
-    max-height: 300px;
-    max-width: 40%;
-  }
-}
+//   h1,h2,h3 {
+//     border: 2px solid yellow;
+//   }
 
-.gallery-details{
-  h3 {}
-  p {}
-}
+//   a {
+//     border: 2px solid #1ce;
+//   }
 
-#splash{
-  background-color: $white-smoke;
-  // background-color: $primary-background-color;
-  padding: 3%;
-  .header{
-    @include color($header-color);
-    margin: auto;
-    text-transform: uppercase;
-    width: 100%;
+//   p {
+//     border: 2px solid red;
+//   }
 
-    h1,h2 {
-      display: block;
-      float: left;
-      max-width: 40%;
-    }
-    // p { font-style: italic; }
-  }
+//   img {
+//     border: 2px solid purple;
+//   }
+// }
 
-  .intro {
-    float: right;
-    margin: auto;
-    width: 40%;
-  }
-}
-
-#projects{
-  @extend .gallery;
-  background-color: $green-background;
-  color: $white-smoke;
-}
-
-#writing{
-  @extend .gallery;
-  background-color: $red-background;
-}
-
-#contact{
-  @extend .gallery;
-  background-color: $grey;
-}
-
-.credits{
-  text-align: center;
-}
-.fa{}
-.fa-copyright{}
-
+// .hr{
+//   border: 1px solid $horizontal-rule-color;
+//   clear: both;
+//   margin: 0;
+// }
 
 // .container{
 //   font-family: $font-stack;
@@ -186,92 +98,71 @@ html, body {
 //   }
 // }
 
-// header{
-//   background-color: $primary-background-color;
-//   @include color($header-color);
-//   margin: auto;
-//   padding: 1%;
-//   text-transform: uppercase;
-
-//   h1 { max-width: 60%; }
-
-//   p { font-style: italic; }
-// }
-
-
-
-// .hr{
-//   border: 1px solid $horizontal-rule-color;
+// .gallery{
 //   clear: both;
-//   margin: 1%;
-// }
+//   padding: 1%;
+//   h3,p {
+//     float: left;
+//     margin-left: 5%;
+//     max-width: 50%;
+//   }
 
-// .main-content{
-//   margin: auto;
-//   a {
-//     color: $primary-link-color;
+//   img {
+//     float: right;
+//     margin-right: 5%;
+//     max-height: 300px;
+//     max-width: 40%;
 //   }
 // }
 
-// .summary{
-//   // background-color: $white-smoke; // blue
-//   background-color: $secondary-color;
-//   color: $white-smoke;
-//   // @include color($header-color);
-//   clear: both;
+// .gallery-details{
+//   h3 {}
+//   p {}
 // }
 
-// .project {}
+// #splash{
+//   background-color: $white-smoke;
+//   // background-color: $primary-background-color;
+//   padding: 3%;
+//   .header{
+//     @include color($header-color);
+//     margin: auto;
+//     text-transform: uppercase;
+//     width: 100%;
 
-// // Need to DRY these heights out
-// #hummingbird{
-//   background-color: $grey; // black
-//   height: 300px;
+//     h1,h2 {
+//       display: block;
+//       float: left;
+//       max-width: 40%;
+//     }
+//     // p { font-style: italic; }
+//   }
+
+//   .intro {
+//     float: right;
+//     margin: auto;
+//     width: 40%;
+//   }
 // }
 
-// #maps {
-//   background-color: $blue; // red
-//   height: 300px;
-// }
-
-// #pending {
+// #projects{
+//   @extend .gallery;
 //   background-color: $green-background;
-//   color: white;
-//   height: 300px;
+//   color: $white-smoke;
 // }
 
-// .project-description{
-//   float: left;
-//   margin: auto;
-//   max-width: 40%;
+// #writing{
+//   @extend .gallery;
+//   background-color: $red-background;
 // }
 
-// // Need to clean this up
-// // the HTML semantics don't seem right
-// .project-image{
-//   float: right;
-//   margin: auto;
-//   max-height: 300px;
-//   max-width: 50%;
+// #contact{
+//   @extend .gallery;
+//   background-color: $grey;
 // }
 
-// .hummingbird{
-//   @extend .project-image;
+// .credits{
+//   text-align: center;
 // }
-// .maps-image{
-//   @extend .project-image;
-// }
-// .pending{
-//   @extend .project-image
-// }
-
-
-// #about {
-//   background-color: $turquoise;
-//   height: 300px;
-// }
-
-// #contact {
-//   background-color: $business-card-green;
-//   height: 300px;
-// }
+// .fa{}
+// .fa-copyright{}
