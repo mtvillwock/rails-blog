@@ -14,7 +14,7 @@ html, body {
 @import 'nav';
 
 // // Variables
-// $font-stack: 'Roboto', Helvetica, sans-serif;
+$font-stack: 'Roboto', Helvetica, sans-serif;
 // $primary-background-color: #efefef;
 // $secondary-color: #0D355A;
 // $primary-link-color: #00b0ff;
@@ -74,46 +74,46 @@ html, body {
 //   margin: 0;
 // }
 
-// .container{
-//   font-family: $font-stack;
-//   margin: auto;
-//   max-width: 100%;
-//   padding: 1%;
+.container{
+  font-family: $font-stack;
+  margin: auto;
+  max-width: 90%;
+  padding: 1%;
 
-//   h1 {
-//     font-size: 1.8em;
-//   }
+  h1 {
+    font-size: 1.8em;
+  }
 
-//   h2 {
-//     font-size: 1.4em;
-//   }
+  h2 {
+    font-size: 1.4em;
+  }
 
-//   h3 {
-//     font-size: 1.3em;
-//     font-weight: bold;
-//   }
+  h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
 
-//   p {
-//     font-size: 1.0em;
-//   }
-// }
+  p {
+    font-size: 1.0em;
+  }
+}
 
-// .gallery{
-//   clear: both;
-//   padding: 1%;
-//   h3,p {
-//     float: left;
-//     margin-left: 5%;
-//     max-width: 50%;
-//   }
+.gallery{
+  clear: both;
+  padding: 1%;
+  h3,p {
+    float: left;
+    margin-left: 5%;
+    max-width: 50%;
+  }
 
-//   img {
-//     float: right;
-//     margin-right: 5%;
-//     max-height: 300px;
-//     max-width: 40%;
-//   }
-// }
+  img {
+    float: right;
+    margin-right: 5%;
+    max-height: 300px;
+    max-width: 40%;
+  }
+}
 
 // .gallery-details{
 //   h3 {}
