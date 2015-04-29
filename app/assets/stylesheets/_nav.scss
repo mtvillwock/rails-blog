@@ -1,7 +1,7 @@
 $nav-link-color: #5a5a5a;
 
 nav {
-  padding: 1%;
+  padding: 10px;
   ul {
     li {
       display: inline;
@@ -9,14 +9,14 @@ nav {
   }
 }
 
-.nav:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-}
+// .nav::after {
+//      visibility: hidden;
+//      display: block;
+//      font-size: 0;
+//      content: " ";
+//      clear: both;
+//      height: 0;
+// }
 
 .nav-items {
   float: left;
