@@ -1,103 +1,67 @@
 <!-- synopsis of projects -->
 <section id="projects">
-  <div class="gallery">
-    <div class="gallery details">
-      <h3>Projects</h3>
-      <p>I build web apps and APIs, primarily using Ruby on Rails and Postgres. I think SCSS is brilliant and that concise, semantic HTML and CSS is beautiful.</p>
-      <p>I'm always looking for new tech to learn. Next on my agenda is Node.js, React, and NoSQL databases.</p>
-    </div>
-  </div>
-
   <!-- first project -->
-  <div class="gallery">
-    <ul>
-      <li>
-        <h3>Project (Month)</h3>
-        <p>a brief one paragraph description of the
-          project, including your role, the
-          technologies you used, and who the
-          work was for (e.g. client, employer, or
-          self-initiated project)</p>
-          <p>• at least one high resolution screenshot
-            • the date you finished working on the
-            project
-            • a link to the live site (if available)
-            • a link to the source code (if available)</p>
-          </li>
-          <li><%= link_to 'https://github.com/jeremymcintyre/hummingbird', :class => "image", target: "_blank" do %>
-            <%= image_tag('hummingbird-demo.jpg', :class => "image", :alt => "hummingbird") %>
-            <% end %>
-          </li>
-        </ul>
-      </div>
       <div class="gallery">
-        <ul>
-          <li>
+          <div class="gallery-header">
             <h3>Hummingbird (February)</h3>
             <p>texts delivered when you want.</p>
-            <p>Description of project, role, who the work was for, technologies used, date worked on/finished.</p>
-          </li>
-          <li><%= link_to 'https://github.com/jeremymcintyre/hummingbird', :class => "image", target: "_blank" do %>
+          </div>
+          <div class="gallery-image col-xs-12">
+            <%= link_to 'https://github.com/jeremymcintyre/hummingbird', :class => "image", target: "_blank" do %>
             <%= image_tag('hummingbird-demo.jpg', :class => "image", :alt => "hummingbird") %>
             <% end %>
-          </li>
-        </ul>
+          </div>
+          <div class="gallery-details col-xs-12">
+            <p>Description of project, role, who the work was for, technologies used, date worked on/finished.</p>
+          </div>
       </div>
       <!-- second project -->
       <div class="gallery">
-        <ul>
-          <li>
+          <div class="gallery-details col-xs-12">
             <%= link_to 'https://messagev.herokuapp.com', target: "_blank" do %>
             <h3>MessageV (January)</h3>
             <% end %>
             <p>Send a message to any mobile phone in the USA.</p>
-          </li>
-          <li><%= link_to 'https:/github.com/mtvillwock/messagev', target: "_blank" do %>
+          </div>
+          <div class="gallery-image col-xs-12"><%= link_to 'https:/github.com/mtvillwock/messagev', target: "_blank" do %>
             <%= image_tag('messagev.jpg', :class => "image", :alt => "MessageV") %>
             <% end %>
-          </li>
-        </ul>
+          </div>
       </div>
       <!-- third project -->
       <div class="gallery">
-        <ul>
-          <li>
+          <div class="gallery-details col-xs-12">
             <%= link_to 'https://hotel-locker-system.herokuapp.com', target: "_blank" do %>
-            <h3>Hotel Concierge Locker System(April)</h3>
+            <h3>Hotel Concierge Locker System (April)</h3>
             <% end %>
             <p>Track bags stored in lockers and retrieve them by redeeming tickets.</p>
-          </li>
-          <li><%= link_to 'https:/github.com/mtvillwock/hotel_concierge_locker_system', target: "_blank" do %>
+          </div>
+          <div class="gallery-image col-xs-12"><%= link_to 'https:/github.com/mtvillwock/hotel_concierge_locker_system', target: "_blank" do %>
             <%= image_tag("hotel-concierge-locker-system.jpg", :class => "image", :alt => "pending") %>
             <% end %>
-          </li>
-        </ul>
+          </div>
       </div>
       <!-- 4th project -->
       <div class="gallery">
-        <ul>
-          <li><%= link_to 'https://mtvillwock-stack-overflow.herokuapp.com', :class => "image", target: "_blank" do %>
+          <div class="gallery-image col-xs-12"><%= link_to 'https://mtvillwock-stack-overflow.herokuapp.com', :class => "image", target: "_blank" do %>
             <%= image_tag('dbc-overflow.jpg', :alt => "stack overflow clone") %>
             <% end %>
-          </li>
-          <li>
+          </div>
+          <div class="gallery-details col-xs-12">
             <h3>Stack Overflow Clone (February)</h3>
             <p>Ruby on Rails CRUD app built to mimic the functionality of Stack Overflow. Utilizes AJAX and form partials to facilitate smoother user experience.</p>
-          </li>
-        </ul>
+          </div>
       </div>
       <!-- 5th project -->
       <div class="gallery">
-        <ul>
-          <li><%= link_to '/', :class => "image", target: "_blank" do %>
+          <div class="gallery-image col-xs-12"><%= link_to '/', :class => "image", target: "_blank" do %>
             <%= image_tag('Villwock_ODM.png', :alt => "this site") %>
             <% end %>
-          </li>
-          <li>
+          </div>
+          <div class="gallery-details col-xs-12">
             <h3>This Site (March)</h3>
             <p>Personal website and blogging platform. Built with Rails, SCSS, and love.</p>
-          </li>
-        </ul>
+          </div>
       </div>
       <!-- end projects here -->
     </section>

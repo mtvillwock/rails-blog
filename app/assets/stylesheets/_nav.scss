@@ -1,7 +1,7 @@
 $nav-link-color: #5a5a5a;
 
 nav {
-  padding: 10px;
+  // padding: %;
   ul {
     li {
       display: inline;
@@ -9,22 +9,22 @@ nav {
   }
 }
 
-// .nav::after {
-//      visibility: hidden;
-//      display: block;
-//      font-size: 0;
-//      content: " ";
-//      clear: both;
-//      height: 0;
-// }
+nav:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: "";
+     clear: both;
+     height: 0;
+}
 
 .nav-items {
   float: left;
   a {
     margin: auto 10px;
     color: $nav-link-color;
-    font-size: 1.05em;
-    padding: 14px 10px;
+    font-size: 1.1em;
+    padding: 2%;
     text-transform: uppercase;
   }
 }

@@ -1,14 +1,12 @@
 <section id="writing">
-    <div class="gallery">
-      <ul>
-        <li>
-          <%= image_tag('villwock-hawaii.jpg', :class => 'image', :alt => "this site") %>
-        </li>
-        <li>
-          <h3>Writing</h3>
-          <p>I've been a writer all my life, and you'll rarely see me without a pen and notebook on hand. Whether it's fiction in my spare time, or documentation for code, I love writing. Check out my <%= link_to articles_path do %>blog<% end %> for recent musings.</p>
-        </li>
-      </ul>
+  <div class="gallery">
+    <div class="gallery-image">
+      <%= image_tag('villwock-hawaii.jpg', :class => 'image', :alt => "this site") %>
     </div>
-    <!-- end writing here -->
-  </section>
+    <div class="gallery-details">
+      <h3>Writing</h3>
+      <p>I've been a writer all my life, and you'll rarely see me without a pen and notebook on hand. Whether it's fiction in my spare time, or documentation for code, I love writing. Check out my <%= link_to articles_path do %>blog<% end %> for recent technical adventures.</p>
+    </div>
+  </div>
+  <!-- end writing here -->
+</section>

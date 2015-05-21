@@ -1,23 +1,26 @@
 <nav>
-  <ul class="nav-items">
-    <li><%= link_to 'Blog', controller: 'articles' %></li>
-    <li><%= link_to 'About', controller: 'welcome', anchor: 'splash' %></li>
-    <li><%= link_to 'Projects', controller: 'welcome', anchor: 'projects' %></li>
-    <!-- change this once projects are set up on their own pages -->
-    <li><%= link_to 'Contact', controller: 'welcome', anchor: 'contact' %></li>
-  </ul>
-  <ul class="contact-icons">
-      <li><%= link_to "mailto:" + ENV["ADMIN_EMAIL"] do %>
+  <div class="col-xs-6">
+    <ul class="nav-items">
+      <li><%= link_to 'Blog', controller: 'articles' %></li>
+      <li><%= link_to 'About', controller: 'welcome', anchor: 'splash' %></li>
+      <li><%= link_to 'Projects', controller: 'welcome', anchor: 'projects' %></li>
+      <!-- change this once projects are set up on their own pages -->
+    </ul>
+  </div>
+  <div class="col-xs-6">
+    <ul class="contact-icons">
+      <%= link_to "mailto:" + ENV["ADMIN_EMAIL"] do %>
       <%= image_tag("Communication-email-icon.png", :alt => "email icon") %>
-      <% end %></li>
-      <li><%= link_to 'https://twitter.com/mtvillwock', target: "_blank" do %>
+      <% end %>
+      <%= link_to 'https://twitter.com/mtvillwock', target: "_blank" do %>
       <%= image_tag('Twitter_logo_blue.png', :alt => "Twitter") %>
-      <% end %></li>
-      <li><%= link_to 'https://linkedin.com/in/matthewvillwock', target: "_blank" do %>
+      <% end %>
+      <%= link_to 'https://linkedin.com/in/matthewvillwock', target: "_blank" do %>
       <%= image_tag('linkedin-icon-logo-vector.png', :alt => "LinkedIn") %>
-      <% end %></li>
-      <li><%= link_to 'https://github.com/mtvillwock', target: "_blank" do %>
+      <% end %>
+      <%= link_to 'https://github.com/mtvillwock', target: "_blank" do %>
       <%= image_tag('GitHub-Mark-120px-plus.png', :alt => "GitHub") %>
-      <% end %></li>
-  </ul>
+      <% end %>
+    </ul>
+  </div>
 </nav>
