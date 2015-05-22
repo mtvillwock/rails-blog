@@ -1,7 +1,7 @@
 $nav-link-color: #5a5a5a;
 
 nav {
-  // padding: %;
+  padding: 10px;
   ul {
     li {
       display: inline;
@@ -24,7 +24,7 @@ nav:after {
     margin: auto 10px;
     color: $nav-link-color;
     font-size: 1.1em;
-    padding: 2%;
+    padding: 14px 10px;
     text-transform: uppercase;
   }
 }
