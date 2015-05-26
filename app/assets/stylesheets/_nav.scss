@@ -1,30 +1,48 @@
 $nav-link-color: #5a5a5a;
 
-.contact-icons{
-  float: right;
+nav {
+  background-color: white;
+    padding: 10px;
+    ul {
+        a, li {
+            display: inline;
+        }
+    }
 }
 
-.home-nav{
-  padding: 1%;
+nav:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: "";
+    clear: both;
+    height: 0;
 }
 
 .nav-items {
-  a {
     float: left;
-    margin: auto 10px;
-    color: $nav-link-color;
-    font-size: 1.05em;
-    padding: 14px 10px;
-    text-transform: uppercase;
-  }
+    li {
+        a {
+            margin: auto 10px;
+            color: $nav-link-color;
+            font-size: 1.1em;
+            padding: 14px 10px;
+            text-transform: uppercase;
+        }
+    }
 }
 
-.social-media-icon {
-  display: inline;
-  img {
-    // max-height: 100px / 960px * 100%;
-    max-height: 36px;
-    // max-width: 100px / 960px * 100%;
-    max-width: 36px;
-  }
+.contact-icons {
+    a {
+        margin: auto 10px;
+        display: inline;
+    }
+    a:hover {
+        background-color: green;
+    }
+    img {
+        margin: auto 10px;
+        max-height: 100px / 960px * 100%;
+        max-width: 100px / 960px * 100%;
+    }
 }

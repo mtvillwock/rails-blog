@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+/*//= require skeleton*/
+//= require bootstrap.min
+//= require font-awesome.min

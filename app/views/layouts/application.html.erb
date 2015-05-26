@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Matt Villwock | Software Developer</title>
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link href='//fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <meta content="Matt Villwock is a web developer and recent graduate of Dev Bootcamp. Click here to contact Matt or see his projects.">
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'>
+  <title>Matt Villwock | Full Stack Web Developer</title>
+  <meta content="Matt Villwock is a web developer and recent graduate of Dev Bootcamp. Click here to contact Matt or see his projects.">
 </head>
 <body>
 
   <%= yield %>
+  <!-- moved here to allow page to load and then render styling and fonts -->
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
+  <!-- Google Analytics tracking snippet -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63406314-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>

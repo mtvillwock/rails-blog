@@ -2,10 +2,8 @@
   <%= render 'welcome/nav' %>
 
   <header>
-    <%= link_to '/' do %>
-    <h1>Matt Villwock</h1>
-    <% end %>
-    <h2>Web Developer</h2>
+    <h1><%= link_to '/' do %>Matt Villwock<% end %></h1>
+    <h2>Full Stack Web Developer</h2>
     <p>"Art is never finished, only abandoned."</p>
     <span class="new-article"><%= link_to 'Make a new article', new_article_path %></span>
   </header>

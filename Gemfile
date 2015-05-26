@@ -28,6 +28,9 @@ gem 'nokogiri'
 gem 'redcarpet'
 gem 'coderay'
 
+# To use with .env file
+gem 'dotenv-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -36,10 +39,20 @@ gem 'coderay'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'debugger'
+
+# using rspec to test instead of minitest
+  gem 'rspec-rails', '~> 3.0'
+
+  gem 'capybara'
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
@@ -48,8 +61,7 @@ group :development, :test do
   gem 'spring'
 end
 
-gem 'rails_12factor', group: :production
-
 group :production do
   gem 'thin'
+  gem 'rails_12factor'
 end
