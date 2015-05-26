@@ -52,9 +52,7 @@
   <!-- third project -->
   <div class="gallery">
     <div class="gallery-header">
-      <%= link_to 'https://github.com/mtvillwock/hotel_concierge_locker_system', target: "_blank" do %>
       <h3>Hotel Concierge Locker System (April)</h3>
-      <% end %>
       <p>Track bags stored in lockers and retrieve them by redeeming tickets.</p>
     </div>
     <div class="gallery-image col-xs-12"><%= link_to 'https:/github.com/mtvillwock/hotel_concierge_locker_system', target: "_blank" do %>
@@ -63,23 +61,39 @@
     </div>
     <div class="gallery-details col-xs-12">
       <p>Single page Rails app using AJAX built for a hiring coding challenge. Built in one day.</p>
+      <div class="buttons">
+        <button class="source">
+          <%= link_to 'https://github.com/mtvillwock/hotel_concierge_locker_system', target: "_blank" do %>
+          Repo
+          <% end %>
+        </button>
+      </div>
     </div>
   </div>
   <!-- 4th project -->
   <div class="gallery">
     <div class="gallery-header">
       <div class="gallery-header">
-        <%= link_to 'https://github.com/mtvillwock/stack-overflow-clone', target: "_blank" do %>
         <h3>Stack Overflow Clone (February)</h3>
-        <% end %>
         <p>Ruby on Rails CRUD app built to mimic the functionality of Stack Overflow.</p>
       </div>
-      <div class="gallery-image col-xs-12"><%= link_to 'https://mtvillwock-stack-overflow.herokuapp.com', :class => "image", target: "_blank" do %>
+      <div class="gallery-image col-xs-12">
         <%= image_tag('dbc-overflow.jpg', :alt => "stack overflow clone") %>
-        <% end %>
       </div>
       <div class="gallery-details col-xs-12">
         <p>Rails app performing create, read, update, and delete operations using AJAX. Built with Paul Yu in five days.</p>
+        <div class="buttons">
+          <button class="app">
+            <%= link_to 'https://mtvillwock-stack-overflow.herokuapp.com', target: "_blank" do %>
+            App
+            <% end %>
+          </button>
+          <button class="source">
+            <%= link_to 'https://github.com/mtvillwock/stack-overflow-clone', target: "_blank" do %>
+            Repo
+            <% end %>
+          </button>
+        </div>
       </div>
     </div>
     <!-- end projects here -->
