@@ -3,97 +3,48 @@
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-// html, body {
-//   height: 100%;
-//   margin: 0;
-//   padding: 0;
-//   width: 100%;
-// }
-
 // importing partial stylesheet
 @import "nav";
 
 // // Variables
 $font-stack: "Roboto", Helvetica, sans-serif;
+$primary-background-color: #f7f7f7;
+$secondary-color: #0D355A;
+$primary-link-color: #00b0ff;
+$header-color: #0D355A;
 
-// $primary-background-color: #efefef;
-// $secondary-color: #0D355A;
-// $primary-link-color: #00b0ff;
-// $header-color: #0D355A;
-// $horizontal-rule-color: #e7e7e7;
-// $grey: #BABACA;
-// $white-smoke: #F5F5F5;
-// $red-background: #B0061E; //#b00b00; #C00132;
-// $green-background: #346315; //#71970 9/E //#360 //#537732 //#2E512E; // #009925;
-// $dark-grey: #606060;
+$horizontal-rule-color: #e7e7e7;
+$grey: #BABACA;
+$white-smoke: #F5F5F5;
+$red-background: #B0061E;
+
+//#b00b00; #C00132;
+$green-background: #346315;
+
+//#71970 9/E //#360 //#537732 //#2E512E; // #009925;
+$dark-grey: #606060;
+
 // // End Variables
 
-// // Media queries pending
-// @media (min-width: 400px) {
-//   .container {
-//     width: 85%;
-//     padding: 0; }
-//   }
-// // Example media query^
+@mixin color($header-color) {
+    h1, h2, h3 {
+        color: $header-color;
+    }
+}
 
-// @mixin color($header-color) {
-//   h1,h2,h3 {
-//     color: $header-color;
-//   }
-// }
-
-html, body {
+.main {
+    background-color: $primary-background-color;
     font-size: $font-stack;
-    //   background-color: $primary-background-color;
-    //   margin: 0;
-    //   padding: 0;
-    // div {
-    //     border: 2px solid #1c3;
-    // }
-    // h1, h2, h3 {
-    //     border: 2px solid yellow;
-    // }
-    // a {
-    //     border: 2px solid #1ce;
-    // }
-    // p {
-    //     border: 2px solid red;
-    // }
-    // img {
-    //     border: 2px solid purple;
-    // }
+    section p a {
+        color: $primary-link-color;
+    }
 }
 
-// .hr{
-//   border: 1px solid $horizontal-rule-color;
-//   clear: both;
-//   margin: 0;
+// * {
+//     border: 1px red solid;
 // }
 
-// .container {
-//     font-family: $font-stack;
-//     margin: auto;
-//     max-width: 90%;
-//     padding: 1%;
-//     h1 {
-//         font-size: 1.8em;
-//     }
-//     h2 {
-//         font-size: 1.4em;
-//     }
-//     h3 {
-//         font-size: 1.3em;
-//         font-weight: bold;
-//     }
-//     p {
-//         font-size: 1.0em;
-//     }
-// }
-
-.gallery {
-    // clear: both;
-    padding: 1%;
-}
+.gallery {}
 
 .gallery:after {
     visibility: hidden;
@@ -129,12 +80,10 @@ html, body {
     a, a:visited {
         color: inherit;
     }
-    max-width: 400px;
+    max-width: 200px;
 }
 
-.buttons {}
-
-:after {
+.buttons:after {
     visibility: hidden;
     display: block;
     font-size: 0;
@@ -155,45 +104,24 @@ html, body {
     background-color: green;
 }
 
-// #splash{
-//   background-color: $white-smoke;
-//   // background-color: $primary-background-color;
-//   padding: 3%;
-//   .header{
-//     @include color($header-color);
-//     margin: auto;
-//     text-transform: uppercase;
-//     width: 100%;
-
-//     h1,h2 {
-//       display: block;
-//       float: left;
-//       max-width: 40%;
-//     }
-//     // p { font-style: italic; }
-//   }
-
-//   .intro {
-//     float: right;
-//     margin: auto;
-//     width: 40%;
-//   }
+// #splash {
+//     color: #fff;
+//     background-color: $green-background;
 // }
 
-// #projects{
-//   @extend .gallery;
-//   background-color: $green-background;
-//   color: $white-smoke;
+// #projects {
+//     color: #fff;
+//     background-color: $secondary-color;
 // }
 
-// #writing{
-//   @extend .gallery;
-//   background-color: $red-background;
+// #writing {
+//     color: #fff;
+//     background-color: $red-background;
 // }
 
-// #contact{
-//   @extend .gallery;
-//   background-color: $grey;
+// #contact {
+//     color: black;
+//     background-color: $grey;
 // }
 
 // .credits{
