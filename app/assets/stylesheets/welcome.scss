@@ -43,7 +43,7 @@ $font-stack: "Roboto", Helvetica, sans-serif;
 // }
 
 html, body {
-  font-size: $font-stack;
+    font-size: $font-stack;
     //   background-color: $primary-background-color;
     //   margin: 0;
     //   padding: 0;
@@ -121,10 +121,39 @@ html, body {
     }
 }
 
-// .gallery-details{
-//   h3 {}
-//   p {}
-// }
+.buttons {
+    button {
+        display: inline;
+        max-width: 45%;
+    }
+    a, a:visited {
+        color: inherit;
+    }
+    max-width: 400px;
+}
+
+.buttons {}
+
+:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+.app {
+    float: left;
+    color: white;
+    background-color: red;
+}
+
+.source {
+    float: right;
+    color: orange;
+    background-color: green;
+}
 
 // #splash{
 //   background-color: $white-smoke;

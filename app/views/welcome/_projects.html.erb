@@ -1,73 +1,81 @@
 <!-- synopsis of projects -->
 <section id="projects">
   <!-- first project -->
-      <div class="gallery">
-          <div class="gallery-header">
-            <%= link_to 'https://try-hummingbird.herokuapp.com', target: "_blank" do %>
-            <h3>Hummingbird (February)</h3>
-            <% end %>
+  <div class="gallery">
+    <div class="gallery-header">
+      <h3>Hummingbird (February)</h3>
 
-            <p>Schedule texts when you think of them. Deliver them when the time is right.</p>
-            <button>Source Code</button> <button>Deployed App</button>
-          </div>
-          <div class="gallery-image col-xs-12">
-            <%= link_to 'https://github.com/jeremymcintyre/hummingbird', :class => "image", target: "_blank" do %>
-            <%= image_tag('hummingbird-demo.jpg', :class => "image", :alt => "hummingbird") %>
-            <% end %>
-          </div>
-          <div class="gallery-details col-xs-12">
-            <p>Hummingbird is a web app that allows users to schedule text messages to be sent at a more optimal time in the future. Hummingbird consists of an Ionic/Angular client communicating with a decoupled Rails API. Hummingbird was built in seven days by myself, Jeremy McIntyre, William Tsang, and Rex Salisbury.</p>
-          </div>
+      <p>Schedule texts when you think of them. Deliver them when the time is right.</p>
+    </div>
+    <div class="gallery-image col-xs-12">
+      <%= image_tag('hummingbird-demo.jpg', :class => "image", :alt => "hummingbird") %>
+    </div>
+    <div class="gallery-details col-xs-12">
+      <p>Hummingbird is a web app that allows users to schedule text messages to be sent at a more optimal time in the future. Hummingbird consists of an Ionic/Angular client communicating with a decoupled Rails API. Hummingbird was built in seven days by myself, Jeremy McIntyre, William Tsang, and Rex Salisbury.</p>
+
+      <div class="buttons">
+        <button class="app">
+          <%= link_to 'https://try-hummingbird.herokuapp.com', target: "_blank" do %>
+          App
+          <% end %>
+        </button>
+        <button class="source">
+          <%= link_to 'https://github.com/jeremymcintyre/hummingbird', :class => "image", target: "_blank" do %>
+          Repo
+          <% end %>
+        </button>
       </div>
-      <!-- second project -->
-      <div class="gallery">
-          <div class="gallery-header">
-            <%= link_to 'https://github.com/mtvillwock/rateflix', target: "_blank" do %>
-            <h3>RateFlix (May)</h3>
-            <% end %>
-            <p>Find movies and review them. Sort by title, genre, and release date.</p>
-          </div>
-          <div class="gallery-image col-xs-12">
-            <%= link_to 'https:/github.com/mtvillwock/rateflix', target: "_blank" do %>
-            <%= image_tag('rateflix.png', :class => "image", :alt => "RateFlix") %>
-            <% end %>
-          </div>
-          <div class="gallery-details col-xs-12">
-            <p>A Rails app that allows users to search for movies by title, as well as create ratings and reviews. RateFlix was built in one day as a coding challenge for a potential employer during my job hunt.</p>
-          </div>
+    </div>
+  </div>
+  <!-- second project -->
+  <div class="gallery">
+    <div class="gallery-header">
+      <%= link_to 'https://github.com/mtvillwock/rateflix', target: "_blank" do %>
+      <h3>RateFlix (May)</h3>
+      <% end %>
+      <p>Find movies and review them. Sort by title, genre, and release date.</p>
+    </div>
+    <div class="gallery-image col-xs-12">
+      <%= link_to 'https:/github.com/mtvillwock/rateflix', target: "_blank" do %>
+      <%= image_tag('rateflix.png', :class => "image", :alt => "RateFlix") %>
+      <% end %>
+    </div>
+    <div class="gallery-details col-xs-12">
+      <p>A Rails app that allows users to search for movies by title, as well as create ratings and reviews. RateFlix was built in one day as a coding challenge for a potential employer during my job hunt.</p>
+    </div>
+  </div>
+  <!-- third project -->
+  <div class="gallery">
+    <div class="gallery-header">
+      <%= link_to 'https://github.com/mtvillwock/hotel_concierge_locker_system', target: "_blank" do %>
+      <h3>Hotel Concierge Locker System (April)</h3>
+      <% end %>
+      <p>Track bags stored in lockers and retrieve them by redeeming tickets.</p>
+    </div>
+    <div class="gallery-image col-xs-12"><%= link_to 'https:/github.com/mtvillwock/hotel_concierge_locker_system', target: "_blank" do %>
+      <%= image_tag("hotel-concierge-locker-system.jpg", :class => "image", :alt => "pending") %>
+      <% end %>
+    </div>
+    <div class="gallery-details col-xs-12">
+      <p>Single page Rails app using AJAX built for a hiring coding challenge. Built in one day.</p>
+    </div>
+  </div>
+  <!-- 4th project -->
+  <div class="gallery">
+    <div class="gallery-header">
+      <div class="gallery-header">
+        <%= link_to 'https://github.com/mtvillwock/stack-overflow-clone', target: "_blank" do %>
+        <h3>Stack Overflow Clone (February)</h3>
+        <% end %>
+        <p>Ruby on Rails CRUD app built to mimic the functionality of Stack Overflow.</p>
       </div>
-      <!-- third project -->
-      <div class="gallery">
-          <div class="gallery-header">
-            <%= link_to 'https://github.com/mtvillwock/hotel_concierge_locker_system', target: "_blank" do %>
-            <h3>Hotel Concierge Locker System (April)</h3>
-            <% end %>
-            <p>Track bags stored in lockers and retrieve them by redeeming tickets.</p>
-          </div>
-          <div class="gallery-image col-xs-12"><%= link_to 'https:/github.com/mtvillwock/hotel_concierge_locker_system', target: "_blank" do %>
-            <%= image_tag("hotel-concierge-locker-system.jpg", :class => "image", :alt => "pending") %>
-            <% end %>
-          </div>
-          <div class="gallery-details col-xs-12">
-            <p>Single page Rails app using AJAX built for a hiring coding challenge. Built in one day.</p>
-          </div>
+      <div class="gallery-image col-xs-12"><%= link_to 'https://mtvillwock-stack-overflow.herokuapp.com', :class => "image", target: "_blank" do %>
+        <%= image_tag('dbc-overflow.jpg', :alt => "stack overflow clone") %>
+        <% end %>
       </div>
-      <!-- 4th project -->
-      <div class="gallery">
-          <div class="gallery-header">
-            <div class="gallery-header">
-            <%= link_to 'https://github.com/mtvillwock/stack-overflow-clone', target: "_blank" do %>
-            <h3>Stack Overflow Clone (February)</h3>
-            <% end %>
-            <p>Ruby on Rails CRUD app built to mimic the functionality of Stack Overflow.</p>
-          </div>
-          <div class="gallery-image col-xs-12"><%= link_to 'https://mtvillwock-stack-overflow.herokuapp.com', :class => "image", target: "_blank" do %>
-            <%= image_tag('dbc-overflow.jpg', :alt => "stack overflow clone") %>
-            <% end %>
-          </div>
-          <div class="gallery-details col-xs-12">
-            <p>Rails app performing create, read, update, and delete operations using AJAX. Built with Paul Yu in five days.</p>
-          </div>
+      <div class="gallery-details col-xs-12">
+        <p>Rails app performing create, read, update, and delete operations using AJAX. Built with Paul Yu in five days.</p>
       </div>
-      <!-- end projects here -->
-    </section>
+    </div>
+    <!-- end projects here -->
+  </section>
