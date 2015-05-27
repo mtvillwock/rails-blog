@@ -12,12 +12,10 @@ $primary-background-color: #f7f7f7;
 $secondary-color: #0D355A;
 $primary-link-color: #00b0ff;
 $header-color: #0D355A;
-
-$horizontal-rule-color: #e7e7e7;
 $grey: #BABACA;
 $white-smoke: #F5F5F5;
 $red-background: #B0061E;
-
+$aqua-orange:#d97e4a;
 //#b00b00; #C00132;
 $green-background: #346315;
 
@@ -44,7 +42,9 @@ $dark-grey: #606060;
 //     border: 1px red solid;
 // }
 
-.gallery {}
+.gallery {
+    color: #f7f7f7;
+}
 
 .gallery:after {
     visibility: hidden;
@@ -104,25 +104,25 @@ $dark-grey: #606060;
     background-color: green;
 }
 
-// #splash {
-//     color: #fff;
-//     background-color: $green-background;
-// }
+#splash {
+    @extend .gallery;
+    background-color: $green-background;
+}
 
-// #projects {
-//     color: #fff;
-//     background-color: $secondary-color;
-// }
+#projects {
+    @extend .gallery;
+    background-color: $secondary-color;
+}
 
-// #writing {
-//     color: #fff;
-//     background-color: $red-background;
-// }
+#writing {
+    @extend .gallery;
+    background-color: $red-background;
+}
 
-// #contact {
-//     color: black;
-//     background-color: $grey;
-// }
+#contact {
+    color: black;
+    background-color: $grey;
+}
 
 // .credits{
 //   text-align: center;
