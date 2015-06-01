@@ -6,7 +6,8 @@ class ArticlesController < ApplicationController
   # Allows read only access for non-admin users so they can't edit/delete things
 
   def index
-    @articles = Article.all
+    # show new articles first
+    @articles = Article.order(created_at: :desc)
   end
 
   def show
