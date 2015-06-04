@@ -1,0 +1,49 @@
+<div class="container">
+  <div class='project-form'>
+    <%= form_for @project do |f| %>
+
+    <% if @project.errors.any? %>
+    <div id="error_explanation">
+      <h2 class="error-warning">
+        <%= pluralize(@project.errors.count, "error") %> prohibited
+        this project from being saved:
+      </h2>
+      <ul>
+        <% @project.errors.full_messages.each do |msg| %>
+        <li class="error-message"><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+    <% end %>
+
+    <p class="project-form-name">
+      <%= f.text_field :name, placeholder: 'project name' %>
+    </p>
+    <p class="project-form-month">
+      <%= f.text_field :month, placeholder: 'project month' %>
+    </p>
+    <p class="project-form-summary">
+      <%= f.text_area :tagline, placeholder: "tagline" %>
+    </p>
+    <p class="project-form-description">
+      <%= f.text_area :description, placeholder: "project description" %>
+    </p>
+    <p class="project-form-summary">
+      <%= f.text_area :summary, placeholder: "summary here" %>
+    </p>
+    <p class="project-form-img_src">
+      <%= f.text_area :img_src, placeholder: "Copy/paste img_src here" %>
+    </p>
+    <p class="project-form-deploy_url">
+      <%= f.text_area :deploy_url, placeholder: "Copy/paste deploy_url here" %>
+    </p>
+    <p class="project-form-github_url">
+      <%= f.text_area :github_url, placeholder: "Copy/paste github_url here" %>
+    </p>
+
+    <p class="project-form-submit">
+      <%= f.submit %>
+    </p>
+    <% end %>
+  </div>
+</div>

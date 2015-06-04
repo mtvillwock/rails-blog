@@ -2,13 +2,10 @@
   <%= render 'welcome/nav' %>
 
   <header>
-    <h1><%= link_to '/' do %>Matt Villwock<% end %></h1>
-    <h2>Full Stack Web Developer</h2>
+    <%= render 'welcome/header' %>
     <p>"Art is never finished, only abandoned."</p>
     <span class="new-article"><%= link_to 'Make a new article', new_article_path %></span>
   </header>
-
-  <div class="hr"></div>
 
   <div class="article-list">
     <% unless @articles.nil? %>
@@ -31,7 +28,4 @@
     <% end %>
     <% end %>
   </div>
-
-  <%= render 'welcome/nav' %>
-  <div class="hr"></div>
 </div>
