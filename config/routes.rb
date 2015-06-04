@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  get 'projects/index'
+  # get 'projects/index'
 
-  get 'projects/show'
+  # get 'projects/show'
 
-  get 'welcome/index'
+  match '/', to: 'welcome#index', via: :get
+
+  match '/github', to: 'projects#index', via: :get
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
