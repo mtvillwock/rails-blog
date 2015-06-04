@@ -1,0 +1,25 @@
+<div class="gallery">
+  <div class="gallery-header">
+    <h3><%= project.name %> (<%= project.month %>)</h3>
+    <p><%= project.tagline %></p>
+  </div>
+  <div class="gallery-image col-xs-12">
+    <%= image_tag("#{project.img_src}", :class => "image", :alt => "project.name") %>
+  </div>
+  <div class="gallery-details col-xs-12">
+    <p><%= project.description %></p>
+
+    <div class="buttons">
+      <button class="app">
+        <%= link_to "#{project.deploy_url}", target: "_blank" do %>
+        App
+        <% end %>
+      </button>
+      <button class="source">
+        <%= link_to "#{project.github_url}", :class => "image", target: "_blank" do %>
+        Repo
+        <% end %>
+      </button>
+    </div>
+  </div>
+</div>

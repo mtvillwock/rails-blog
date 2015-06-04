@@ -42,9 +42,7 @@ $dark-grey: #606060;
 //     border: 1px red solid;
 // }
 
-.gallery {
-    color: #f7f7f7;
-}
+.gallery {}
 
 .gallery:after {
     visibility: hidden;
@@ -105,17 +103,17 @@ $dark-grey: #606060;
 }
 
 #splash {
-    @extend .gallery;
+    color: #f7f7f7;
     background-color: $green-background;
 }
 
 #projects {
-    @extend .gallery;
+    color: #f7f7f7;
     background-color: $secondary-color;
 }
 
 #writing {
-    @extend .gallery;
+    color: #f7f7f7;
     background-color: $red-background;
 }
 

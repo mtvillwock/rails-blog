@@ -1,11 +1,6 @@
 <div class="container">
   <%= render 'welcome/nav' %>
-
-  <header class="header">
-    <%= link_to '/' do %>
-    <h1>Matt Villwock</h1>
-    <% end %>
-    <h2>Web Developer</h2>
+  <%= render 'welcome/header' %>
 
     <div class="article-nav-links">
       <li class="edit-article"><%= link_to 'Edit article', edit_article_path(@article) %>
@@ -15,32 +10,5 @@
       </li>
     </div>
   </header>
-
-  <div class="hr" id="summary"></div>
-
-  <div class="main-content">
-    <div class="article" id="<%= @article.id %>">
-      <h2 class="article-title">
-        <%= @article.title %>
-      </h2>
-
-      <p class="article-text">
-        <%= markdown(@article.text) %>
-      </p>
-    </div>
-
-
-    <div class="comment-list" id="comment-list">
-      <h2>Comments</h2>
-      <% @article.comments.each do |comment| %>
-      <%= render comment %>
-      <% end %>
-    </div>
-
-    <%= render 'comments/form' %>
-  </div>
-
-  <div class="hr"></div>
-  <%= render 'welcome/nav' %>
-  <div class="hr"></div>
+  <%= render partial: 'article', locals: { article: @article } %>
 </div>

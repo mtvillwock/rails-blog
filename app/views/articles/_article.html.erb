@@ -1,0 +1,21 @@
+<div class="main-content">
+  <div class="article" id="<%= article.id %>">
+    <h2 class="article-title">
+      <%= article.title %>
+    </h2>
+
+    <p class="article-text">
+      <%= markdown(article.text) %>
+    </p>
+  </div>
+
+
+  <div class="comment-list" id="comment-list">
+    <h2>Comments</h2>
+    <% article.comments.each do |comment| %>
+    <%= render comment %>
+    <% end %>
+  </div>
+
+  <%= render 'comments/form' %>
+</div>
