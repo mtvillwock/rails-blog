@@ -1,6 +1,7 @@
 <div class="container">
   <%= render 'welcome/nav' %>
   <%= render 'welcome/header' %>
+  <%= link_to 'Add Project', new_project_path %>
   <h2>Projects</h2>
   <% @projects.each do |project| %>
     <%= render partial: 'project', locals: { project: project } %>
