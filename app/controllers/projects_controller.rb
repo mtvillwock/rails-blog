@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  http_basic_authenticate_with name: ENV["ADMIN_NAME"], password: ENV["ADMIN_PASSWORD"], only: [:create]
+  http_basic_authenticate_with name: ENV["ADMIN_NAME"], password: ENV["ADMIN_PASSWORD"], except: [:index, :show]
   def index
     @projects = Project.all
   end
