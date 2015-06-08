@@ -15,7 +15,8 @@ $header-color: #0D355A;
 $grey: #BABACA;
 $white-smoke: #F5F5F5;
 $red-background: #B0061E;
-$aqua-orange:#d97e4a;
+$aqua-orange: #d97e4a;
+
 //#b00b00; #C00132;
 $green-background: #346315;
 
@@ -42,7 +43,13 @@ $dark-grey: #606060;
 //     border: 1px red solid;
 // }
 
-.gallery {}
+.gallery {
+    h3, p {
+        padding: 0.5rem;
+        // margin: auto;
+        // text-align: center;
+    }
+}
 
 .gallery:after {
     visibility: hidden;
@@ -54,17 +61,12 @@ $dark-grey: #606060;
 }
 
 .gallery-details {
-    // h3, p {
     float: left;
-    //   margin-left: 5%;
-    //   max-width: 50%;
-    // }
 }
 
 .gallery-image {
     float: right;
     img {
-        // margin-right: 5%;
         max-height: 300px;
         max-width: 100%;
     }
@@ -103,18 +105,24 @@ $dark-grey: #606060;
 }
 
 #splash {
-    color: #f7f7f7;
     background-color: $green-background;
+    h3, p {
+        color: #f7f7f7;
+    }
 }
 
 #projects {
-    color: #f7f7f7;
     background-color: $secondary-color;
+    h3, p {
+        color: #f7f7f7;
+    }
 }
 
 #writing {
-    color: #f7f7f7;
     background-color: $red-background;
+    h3, p {
+        color: #f7f7f7;
+    }
 }
 
 #contact {
