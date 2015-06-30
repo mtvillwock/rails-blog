@@ -7,6 +7,12 @@
     <p class="article-text">
       <%= markdown(article.text) %>
     </p>
+    <p class="time-posted">
+      Posted: <%= article.created_at.strftime("%l:%M%P on %B %C, %Y") %>
+    </p>
+    <p class="updated-at">
+      Updated: <%= article.updated_at.strftime("%l:%M%P on %B %C, %Y") %>
+    </p>
   </div>
 
 

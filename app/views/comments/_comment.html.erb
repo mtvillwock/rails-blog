@@ -1,10 +1,14 @@
 <div class="comment" id="<%= comment.id %>">
   <p class="commenter">
-    Posted by: <%= comment.commenter %>
+    <%= comment.commenter %> says:
   </p>
 
   <p class="comment-body">
     <%= comment.body %>
+  </p>
+
+  <p class="time-posted">
+    Posted: <%= comment.created_at.strftime("%l:%M%P on %B %C, %Y") %>
   </p>
 
   <p class="comment-links">
