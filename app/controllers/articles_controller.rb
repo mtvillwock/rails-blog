@@ -7,11 +7,14 @@ class ArticlesController < ApplicationController
 
   def index
     # show new articles first
-    @articles = Article.order(created_at: :desc)
+    @articles = Article.where(status: "published").order(created_at: :desc)
   end
 
   def show
     @article = Article.find(params[:id])
+    unless @article.status == "published"
+      redirect_to articles_path
+    end
   end
 
   def new
@@ -49,9 +52,13 @@ class ArticlesController < ApplicationController
     redirect_to articles_path
   end
 
+  def drafts
+    @articles = Article.where(status: "draft")
+  end
+
   private
   def article_params
-    params.require(:article).permit(:title, :text, :summary)
+    params.require(:article).permit(:title, :text, :summary, :status)
   end
 
 end

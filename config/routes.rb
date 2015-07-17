@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   match '/github', to: 'projects#index', via: :get
 
+  match '/articles/drafts', to: 'articles#drafts', via: :get
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

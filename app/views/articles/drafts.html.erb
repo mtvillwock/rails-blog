@@ -1,0 +1,31 @@
+<div class="container">
+  <%= render 'welcome/nav' %>
+
+  <header>
+    <%= render 'welcome/header' %>
+    <p>"Art is never finished, only abandoned."</p>
+    <span class="new-article"><%= link_to 'Make a new article', new_article_path %></span>
+  </header>
+
+  <div class="article-list">
+    <% unless @articles.nil? %>
+    <% @articles.each do |article| %>
+    <div class="article">
+      <h2 class="article-title">
+        <%= article.title %>
+      </h2>
+      <p class="article-text">
+        <%= markdown(article.summary) %>
+      </p>
+      <ul class="article-links">
+        <li class="show-article"><%= link_to 'Read More', article_path(article) %></li>
+        <li class="edit-article"><%= link_to 'Edit', edit_article_path(article) %></li>
+        <li class="delete-article"><%= link_to 'Delete', article_path(article),
+        method: :delete,
+        data: { confirm: 'Are you sure?'} %></li>
+      </ul>
+    </div>
+    <% end %>
+    <% end %>
+  </div>
+</div>
