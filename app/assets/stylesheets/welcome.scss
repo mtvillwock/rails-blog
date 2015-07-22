@@ -3,6 +3,10 @@
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
+body {
+    background-color: #bbb;
+}
+
 // importing partial stylesheet
 @import "nav";
 
