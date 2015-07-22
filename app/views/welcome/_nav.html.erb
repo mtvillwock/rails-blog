@@ -3,7 +3,7 @@
     <ul class="nav-items">
       <li><%= link_to 'Blog', controller: 'articles' %></li>
       <li><%= link_to 'About', controller: 'welcome', anchor: 'splash' %></li>
-      <li><%= link_to 'Projects', anchor: 'projects' %></li>
+      <li><%= link_to 'Projects', controller: 'welcome', anchor: 'projects' %></li>
       <!-- change projects_path once they are set up on their own pages -->
     </ul>
   </div>
