@@ -44,6 +44,11 @@ ul.article-links li {
   border-bottom: 1px solid #dbdbdb;
   margin: auto;
   padding: 3%;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 .article-title {
