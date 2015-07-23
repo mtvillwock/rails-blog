@@ -1,0 +1,19 @@
+.jumbotron {
+  background-image: url('study-coffee-header.png');
+  max-height: 100%;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  max-height: 400px;
+  max-width: 1920px;
+  h1, h2 {
+    margin-left: 50px;
+    color: white;
+  }
+  a {
+    color: white;
+  }
+}
