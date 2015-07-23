@@ -20,6 +20,8 @@ $grey: #BABACA;
 $white-smoke: #F5F5F5;
 $red-background: #B0061E;
 $aqua-orange: #d97e4a;
+$aqua-green: #4ad87e;
+$aqua-blue:#4aa4d9;
 
 //#b00b00; #C00132;
 $green-background: #346315;
@@ -96,16 +98,18 @@ $dark-grey: #606060;
     height: 0;
 }
 
+// Buttons under projects
+// Colors are being overwritten by Bootstrap
 .app {
     float: left;
-    color: white;
-    background-color: red;
+    // color: white;
+    // background-color: red;
 }
 
 .source {
     float: right;
-    color: orange;
-    background-color: green;
+    // color: orange;
+    // background-color: green;
 }
 
 #splash {
@@ -131,11 +135,31 @@ $dark-grey: #606060;
 
 #contact {
     color: black;
-    background-color: $grey;
+    //  this is being overwritten somewhere
+    // background-color: $aqua-orange;
 }
 
-// .credits{
-//   text-align: center;
-// }
+.contact-buttons {
+    button {
+        display: inline;
+        max-width: 45%;
+    }
+    a, a:visited {
+        color: inherit;
+    }
+    max-width: 400px;
+}
+
+.email-button {
+    margin-left: 20px;
+}
+
+.resume-button {
+    margin-left: 50px;
+}
+
+.credits{
+  text-align: center;
+}
 // .fa{}
 // .fa-copyright{}

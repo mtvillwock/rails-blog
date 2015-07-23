@@ -1,13 +1,12 @@
 Rails.application.routes.draw do
-  # get 'projects/index'
-
-  # get 'projects/show'
 
   match '/', to: 'welcome#index', via: :get
 
   match '/github', to: 'projects#index', via: :get
 
   match '/articles/drafts', to: 'articles#drafts', via: :get
+
+  match '/resume', to: 'documents#resume', via: :get
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -18,6 +17,7 @@ Rails.application.routes.draw do
     resources :articles do
       resources :comments
     end
+    resources :documents, only: [:download_resume]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

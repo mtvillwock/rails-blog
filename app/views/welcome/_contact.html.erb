@@ -1,6 +1,16 @@
 <section id="contact">
   <div class="gallery col-xs-12">
-    <p><%= link_to "mailto:" + ENV["ADMIN_EMAIL"] do %>Contact me. <% end %></p>
+    <p>Want to work together? Need a copy of my resume?</p>
+    <div class="contact-buttons">
+      <button type="button" class="email-button btn btn-large btn-primary">
+        <%= link_to "mailto:" + ENV["ADMIN_EMAIL"], target: "_blank" do %>
+        Contact me!
+        <% end %>
+      </button>
+      <button type="button" class="resume-button btn btn-large btn-success">
+        <%= link_to asset_path("villwock-matthew-resume.pdf"), target: "_blank" do %> Download Resume <% end %>
+      </button>
+    </div>
   </div>
 </section>
 <section class="credits">
